@@ -25576,11 +25576,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\hp\\source\\repos\\FarAway\\FarAway\\FarAway.csproj",
+      "projectUniqueName": "C:\\Users\\hp\\Documents\\GitHub\\Grupa2-turistickaagencija\\Projekat\\FarAway\\FarAway\\FarAway.csproj",
       "projectName": "FarAway",
-      "projectPath": "C:\\Users\\hp\\source\\repos\\FarAway\\FarAway\\FarAway.csproj",
+      "projectPath": "C:\\Users\\hp\\Documents\\GitHub\\Grupa2-turistickaagencija\\Projekat\\FarAway\\FarAway\\FarAway.csproj",
       "packagesPath": "C:\\Users\\hp\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\hp\\source\\repos\\FarAway\\FarAway\\obj\\",
+      "outputPath": "C:\\Users\\hp\\Documents\\GitHub\\Grupa2-turistickaagencija\\Projekat\\FarAway\\FarAway\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
