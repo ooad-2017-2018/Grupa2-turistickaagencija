@@ -1,0 +1,93 @@
+﻿<Page
+    x:Class="FarAway.PretragaTipUsluge"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:FarAway"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" RenderTransformOrigin="0.506,0.436">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <ScrollViewer Grid.Row="0" Grid.ColumnSpan="3" Grid.RowSpan="3">
+
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <StackPanel Grid.ColumnSpan="3">
+                    <Image x:Name="SeaSide" HorizontalAlignment="Stretch" Height="167" Margin="0,0,2,0" Source="Assets/Lord have mercy.png" Stretch="Fill"/>
+                    <AutoSuggestBox x:Name="SearchBox" Height="46" Margin="56,15,36,0" VerticalAlignment="Top" QueryIcon="Find" PlaceholderText="Search"/>
+                  
+                </StackPanel>
+                <TextBlock Grid.ColumnSpan="3" HorizontalAlignment="Left" Height="31" Margin="48,110,0,0" Grid.Row="1" Text="Najpopularniji Izleti" TextWrapping="Wrap" VerticalAlignment="Top" Width="268"/>
+
+                <StackPanel x:Name="img1" Grid.Row="1" Grid.RowSpan="2">
+                    <Image x:Name="Exit"  HorizontalAlignment="Stretch" Height="120" Margin="48,140,0,0" Grid.Row="1" VerticalAlignment="Top" Width="243" Source="Assets/exit.png"/>
+                    <Button Content="Exit Festival" HorizontalAlignment="Stretch" Height="45" Margin="40,0,0,0" Width="130"/>
+                </StackPanel>
+                <StackPanel x:Name="img2" Grid.Row="1" Grid.Column="1" Grid.RowSpan="2">
+                    <Image Grid.Column="1" HorizontalAlignment="Stretch" Height="120" Margin="48,145,0,0" Grid.Row="1" VerticalAlignment="Top" Width="280" Source="Assets/antalya.jpg"/>
+                    <Button Content="Bec-Prag-Bratislava" HorizontalAlignment="Stretch" Height="45" Margin="40,5,0,0" Width="130"/>
+                </StackPanel>
+                <Button x:Name="kultura" Content="Kultura" Grid.ColumnSpan="3" HorizontalAlignment="Left" Height="51" Grid.Row="1" VerticalAlignment="Top" Width="427"/>
+                <Button x:Name="ljetovanje" Content="Ljetovanje" Grid.ColumnSpan="3" Grid.Column="1" HorizontalAlignment="Left" Height="51" Margin="0,0,0,0" Grid.Row="1" VerticalAlignment="Top" Width="427"/>
+                <Button x:Name="zimovanje" Content="Zimovanje" Grid.ColumnSpan="3" Grid.Column="2" HorizontalAlignment="Left" Height="51" Margin="0,0,0,0" Grid.Row="1" VerticalAlignment="Top" Width="426"/>
+                <Button x:Name="jizleti" Content="Jednonevni Izleti" Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="51" Margin="0,51,0,0" Grid.Row="1" VerticalAlignment="Top" Width="640"/>
+                <Button x:Name="honeymoon" Content="Honeymoon" Grid.ColumnSpan="2" Grid.Column="1" HorizontalAlignment="Left" Height="51" Margin="213,51,0,0" Grid.Row="1" VerticalAlignment="Top" Width="640"/>
+
+            </Grid>
+        </ScrollViewer>
+
+
+        <VisualStateManager.VisualStateGroups>
+            <VisualStateGroup x:Name="VisualStateGroup">
+                <VisualState x:Name="Wide">
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="800"/>
+                    </VisualState.StateTriggers>
+                    <VisualState.Setters>
+
+                    </VisualState.Setters>
+                </VisualState>
+
+                <VisualState x:Name="Narrow">
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="0"/>
+                    </VisualState.StateTriggers>
+                    <VisualState.Setters>
+
+                        <Setter Target="img1.(Grid.Row)" Value="1"/>
+                        <Setter Target="img1.(Grid.Column)" Value="0"/>
+                        <Setter Target="img1.(Grid.ColumnSpan)" Value="3"/>
+                       
+                        <Setter Target="img2.(Grid.Row)" Value="2"/>
+                        <Setter Target="img2.(Grid.Column)" Value="0"/>
+                        <Setter Target="img2.(Grid.ColumnSpan)" Value="3"/>
+                        
+
+                     <!--   <Setter Target="kultura.Width" Value="*"/>
+                        <Setter Target="ljetovanje.Width" Value="*"/>
+                        <Setter Target="zimovanje.Width" Value="*"/>
+                        <Setter Target="jizleti.Width" Value="*"/>
+                        <Setter Target="honeymoon.Width" Value="*"/>-->
+
+                    </VisualState.Setters>
+                </VisualState>
+            </VisualStateGroup>
+        </VisualStateManager.VisualStateGroups>
+    </Grid>
+</Page>

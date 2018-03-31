@@ -1,0 +1,129 @@
+﻿<Page
+    x:Class="FarAway.Rezervacija"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:FarAway"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid x:Name="rezervacija" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+       
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+
+                <StackPanel Grid.Row="0" Grid.ColumnSpan="3">
+                    <Image HorizontalAlignment="Left" Height="190" Margin="-36,0,0,0" Source="Assets/Lord have mercy.png" Stretch="Fill"/>
+                </StackPanel>
+
+                <StackPanel x:Name="pocetak" Grid.Row="1">
+                    <TextBlock HorizontalAlignment="Left" Height="37" Margin="10,0,0,0" Text="Odaberite datum pocetka avanture" TextWrapping="Wrap" Width="146"/>
+                    <CalendarDatePicker HorizontalAlignment="Left" Height="125" Margin="30,20,0,0" AllowDrop="True" FirstDayOfWeek="Monday" CanDrag="True"/>
+                </StackPanel>
+
+                <StackPanel x:Name="sun" Grid.Row="1" Grid.Column="1">
+                    <Image HorizontalAlignment="Left" Height="180" Margin="10,0,0,0" Width="417" Source="Assets/sun.jpg" Stretch="Fill"/>
+                </StackPanel>
+
+                <StackPanel x:Name="kraj" Grid.Row="1" Grid.Column="2">
+                    <TextBlock HorizontalAlignment="Left" Height="37" Text="Datum kraja avanture" TextWrapping="Wrap" Width="141"/>
+                    <CalendarDatePicker HorizontalAlignment="Left" Height="125" Margin="30,20,0,0" Width="320"/>
+                </StackPanel>
+
+                <StackPanel x:Name="info" Grid.Row="2">
+                    <TextBlock HorizontalAlignment="Left" Height="28" Margin="0,0,0,0" Text="Broj osoba" TextWrapping="Wrap" Width="88"/>
+                    <TextBox HorizontalAlignment="Left" Height="11" Margin="105,-28,0,0" Text="TextBox" Width="100" InputScope="Number"/>
+                    <TextBlock HorizontalAlignment="Left" Height="40" Margin="0,10,0,0" Text="Izaberite smjestaj" TextWrapping="Wrap" Width="100"/>
+                    <AutoSuggestBox HorizontalAlignment="Left" Height="33" Margin="130,-33,0,0" PlaceholderText="Hoteli" QueryIcon="Find" Width="213*"/>
+                    <TextBlock HorizontalAlignment="Left" Height="40" Margin="0,20,0,0" Text="Popularni izbori" TextWrapping="Wrap" Width="120"/>
+                </StackPanel>
+
+                <StackPanel x:Name="hotel1" Grid.Row="3">
+                    <Image HorizontalAlignment="Left" Height="149" Margin="55,10,0,0" Width="317" Source="Assets/cristal.jpg" Stretch="Fill"/>
+                </StackPanel>
+
+                <StackPanel x:Name="hotel2" Grid.Row="3" Grid.Column="1">
+                    <Image HorizontalAlignment="Left" Height="149" Margin="55,10,0,0" Width="317" Source="Assets/park villa bec.jpg" Stretch="Fill"/>
+                </StackPanel>
+
+                <StackPanel x:Name="hotel3" Grid.Row="3" Grid.Column="3">
+                    <Image HorizontalAlignment="Left" Height="149" Margin="55,10,0,0" Width="317" Source="Assets/salvatore.jpg" Stretch="Fill"/>
+                </StackPanel>
+          
+        <VisualStateManager.VisualStateGroups>
+            <VisualStateGroup x:Name="VisualStateGroup">
+                <VisualState x:Name="Wide">
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="800"/>
+                    </VisualState.StateTriggers>
+                    <VisualState.Setters>
+
+
+
+                        <Setter Target="kraj.(Grid.Row)" Value="1"/>
+                        <Setter Target="kraj.(Grid.Column)" Value="2"/>
+
+                        <Setter Target="sun.Visibility" Value="visiable"/>
+
+
+
+
+                        <Setter Target="hotel3.Visibility" Value="visiable"/>
+
+                        <Setter Target="hotel2.(Grid.Column)" Value="2"/>
+
+
+
+                    </VisualState.Setters>
+                </VisualState>
+
+                <VisualState x:Name="Narrow">
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="0"/>
+                    </VisualState.StateTriggers>
+                    <VisualState.Setters>
+
+                        <Setter Target="rezervacija.Background" Value="#E74856"/>
+                        <Setter Target="sun.Visibility" Value="collapsed"/>
+
+                        <Setter Target="kraj.(Grid.Row)" Value="1"/>
+                        <Setter Target="kraj.(Grid.Column)" Value="1"/>
+                        <Setter Target="kraj.(Grid.RowSpan)" Value="3"/>
+                        <Setter Target="kraj.(Grid.ColumnSpan)" Value="3"/>
+
+                        <Setter Target="pocetak.(Grid.RowSpan)" Value="3"/>
+                        <Setter Target="pocetak.(Grid.ColumnSpan)" Value="3"/>
+
+                        <Setter Target="info.(Grid.RowSpan)" Value="3"/>
+                        <Setter Target="info.(Grid.ColumnSpan)" Value="3"/>
+
+                     
+                        <Setter Target="hotel1.(Grid.ColumnSpan)" Value="3"/>
+
+                        <Setter Target="hotel3.Visibility" Value="collapsed"/>
+
+                        <Setter Target="hotel2.(Grid.Column)" Value="1"/>
+                        <Setter Target="hotel2.(Grid.ColumnSpan)" Value="3"/>
+                      
+
+
+
+                    </VisualState.Setters>
+                </VisualState>
+            </VisualStateGroup>
+        </VisualStateManager.VisualStateGroups>
+
+    </Grid>
+</Page>

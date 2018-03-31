@@ -1,0 +1,96 @@
+﻿<Page
+    x:Class="FarAway.Recenzije"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:FarAway"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid x:Name="recenzije" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+
+        </Grid.ColumnDefinitions>
+
+        <StackPanel Grid.ColumnSpan="3" Grid.Row="0">
+            <Image HorizontalAlignment="Left" Height="177" Source="Assets/Lord have mercy.png" Stretch="Fill"/>
+            <AutoSuggestBox x:Name="SearchBox" Height="46" Margin="3,0,36,0" VerticalAlignment="Top" QueryIcon="Find" PlaceholderText="Pretrazite svoje izlete"/>
+        </StackPanel>
+
+        <StackPanel x:Name="izleti" Grid.Row="1" Grid.Column="1">
+            <TextBlock HorizontalAlignment="Left" Height="25" Margin="25,10,0,0" Text="Vasi izleti"  TextWrapping="Wrap" Width="192"/>
+            <FlipView HorizontalAlignment="Left" Height="186" Margin="25,0,0,0" Width="369" >
+                <Image Source="Assets/exit.png" Stretch="Fill"/>
+                <Image Source="Assets/antalya.jpg" Stretch="Fill"/>
+            </FlipView>
+        </StackPanel>
+
+        <StackPanel x:Name="rejting" Grid.Row="2" Grid.Column="1">
+            <TextBlock HorizontalAlignment="Left" Height="28" Margin="0,0,0,0" Text="Rejting" TextWrapping="Wrap" Width="90"/>
+            <RatingControl HorizontalAlignment="Left" Height="31" Margin="80,-28,0,0" Width="138"/>
+            <TextBlock HorizontalAlignment="Left" Height="24" Margin="0,0,0,0" Text="Komentar" TextWrapping="Wrap" Width="182"/>
+            <TextBox HorizontalAlignment="Left" Height="159" Margin="10,0,0,0" Text="Komentar" Width="407"/>
+        </StackPanel>
+
+        <VisualStateManager.VisualStateGroups>
+            <VisualStateGroup x:Name="VisualStateGroup">
+                <VisualState x:Name="Wide">
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="800"/>
+                    </VisualState.StateTriggers>
+                    <VisualState.Setters>
+
+                        <Setter Target="recenzije.Background" Value="#F7630C"/>
+                        
+                        <Setter Target="izleti.(Grid.Row)" Value="1"/>
+                        <Setter Target="izleti.(Grid.Column)" Value="1"/>
+                        <Setter Target="izleti.Margin" Value="0,0,0,0"/>
+                       
+                        <Setter Target="izleti.(Grid.ColumnSpan)" Value="3"/>
+
+                        <Setter Target="rejting.(Grid.Row)" Value="2"/>
+                        <Setter Target="rejting.(Grid.Column)" Value="1"/>
+                        <Setter Target="rejting.Margin" Value="0,5,0,0"/>
+                        
+                        <Setter Target="rejting.(Grid.ColumnSpan)" Value="3"/>
+
+
+                    </VisualState.Setters>
+                </VisualState>
+
+                <VisualState x:Name="Narrow">
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="0"/>
+                    </VisualState.StateTriggers>
+                    <VisualState.Setters>
+
+                        <Setter Target="recenzije.Background" Value="#D13438"/>
+                        <Setter Target="izleti.(Grid.Row)" Value="1"/>
+                        <Setter Target="izleti.(Grid.Column)" Value="0"/>
+                        <Setter Target="izleti.Margin" Value="0,0,0,0"/>
+                        <Setter Target="izleti.(Grid.RowSpan)" Value="3"/>
+                        <Setter Target="izleti.(Grid.ColumnSpan)" Value="3"/>
+
+                        <Setter Target="rejting.(Grid.Row)" Value="2"/>
+                        <Setter Target="rejting.(Grid.Column)" Value="0"/>
+                        <Setter Target="rejting.Margin" Value="0,5,0,0"/>
+                        <Setter Target="rejting.(Grid.RowSpan)" Value="3"/>
+                        <Setter Target="rejting.(Grid.ColumnSpan)" Value="3"/>
+
+
+                    </VisualState.Setters>
+                </VisualState>
+            </VisualStateGroup>
+        </VisualStateManager.VisualStateGroups>
+
+    </Grid>
+</Page>
