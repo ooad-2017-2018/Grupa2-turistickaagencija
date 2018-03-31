@@ -132,15 +132,35 @@ namespace FarAway.FarAway_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[3];
+            _typeNameTable = new string[13];
             _typeNameTable[0] = "FarAway.MainPage";
             _typeNameTable[1] = "Windows.UI.Xaml.Controls.Page";
             _typeNameTable[2] = "Windows.UI.Xaml.Controls.UserControl";
+            _typeNameTable[3] = "FarAway.Placanje";
+            _typeNameTable[4] = "FarAway.PlacanjeKarticom";
+            _typeNameTable[5] = "FarAway.Pretraga";
+            _typeNameTable[6] = "FarAway.PretragaDestinacija";
+            _typeNameTable[7] = "FarAway.PretragaHoteli";
+            _typeNameTable[8] = "FarAway.PretragaTipUsluge";
+            _typeNameTable[9] = "FarAway.Prijava";
+            _typeNameTable[10] = "FarAway.Recenzije";
+            _typeNameTable[11] = "FarAway.Registracija";
+            _typeNameTable[12] = "FarAway.Rezervacija";
 
-            _typeTable = new global::System.Type[3];
+            _typeTable = new global::System.Type[13];
             _typeTable[0] = typeof(global::FarAway.MainPage);
             _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.Page);
             _typeTable[2] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
+            _typeTable[3] = typeof(global::FarAway.Placanje);
+            _typeTable[4] = typeof(global::FarAway.PlacanjeKarticom);
+            _typeTable[5] = typeof(global::FarAway.Pretraga);
+            _typeTable[6] = typeof(global::FarAway.PretragaDestinacija);
+            _typeTable[7] = typeof(global::FarAway.PretragaHoteli);
+            _typeTable[8] = typeof(global::FarAway.PretragaTipUsluge);
+            _typeTable[9] = typeof(global::FarAway.Prijava);
+            _typeTable[10] = typeof(global::FarAway.Recenzije);
+            _typeTable[11] = typeof(global::FarAway.Registracija);
+            _typeTable[12] = typeof(global::FarAway.Rezervacija);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -176,6 +196,16 @@ namespace FarAway.FarAway_XamlTypeInfo
         }
 
         private object Activate_0_MainPage() { return new global::FarAway.MainPage(); }
+        private object Activate_3_Placanje() { return new global::FarAway.Placanje(); }
+        private object Activate_4_PlacanjeKarticom() { return new global::FarAway.PlacanjeKarticom(); }
+        private object Activate_5_Pretraga() { return new global::FarAway.Pretraga(); }
+        private object Activate_6_PretragaDestinacija() { return new global::FarAway.PretragaDestinacija(); }
+        private object Activate_7_PretragaHoteli() { return new global::FarAway.PretragaHoteli(); }
+        private object Activate_8_PretragaTipUsluge() { return new global::FarAway.PretragaTipUsluge(); }
+        private object Activate_9_Prijava() { return new global::FarAway.Prijava(); }
+        private object Activate_10_Recenzije() { return new global::FarAway.Recenzije(); }
+        private object Activate_11_Registracija() { return new global::FarAway.Registracija(); }
+        private object Activate_12_Rezervacija() { return new global::FarAway.Rezervacija(); }
 
         private global::Windows.UI.Xaml.Markup.IXamlType CreateXamlType(int typeIndex)
         {
@@ -200,6 +230,76 @@ namespace FarAway.FarAway_XamlTypeInfo
 
             case 2:   //  Windows.UI.Xaml.Controls.UserControl
                 xamlType = new global::FarAway.FarAway_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 3:   //  FarAway.Placanje
+                userType = new global::FarAway.FarAway_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_3_Placanje;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 4:   //  FarAway.PlacanjeKarticom
+                userType = new global::FarAway.FarAway_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_4_PlacanjeKarticom;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 5:   //  FarAway.Pretraga
+                userType = new global::FarAway.FarAway_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_5_Pretraga;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 6:   //  FarAway.PretragaDestinacija
+                userType = new global::FarAway.FarAway_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_6_PretragaDestinacija;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 7:   //  FarAway.PretragaHoteli
+                userType = new global::FarAway.FarAway_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_7_PretragaHoteli;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 8:   //  FarAway.PretragaTipUsluge
+                userType = new global::FarAway.FarAway_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_8_PretragaTipUsluge;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 9:   //  FarAway.Prijava
+                userType = new global::FarAway.FarAway_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_9_Prijava;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 10:   //  FarAway.Recenzije
+                userType = new global::FarAway.FarAway_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_10_Recenzije;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 11:   //  FarAway.Registracija
+                userType = new global::FarAway.FarAway_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_11_Registracija;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 12:   //  FarAway.Rezervacija
+                userType = new global::FarAway.FarAway_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_12_Rezervacija;
+                userType.SetIsLocalType();
+                xamlType = userType;
                 break;
             }
             return xamlType;

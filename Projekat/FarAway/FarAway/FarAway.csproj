@@ -98,7 +98,37 @@
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Placanje.xaml.cs">
+      <DependentUpon>Placanje.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PlacanjeKarticom.xaml.cs">
+      <DependentUpon>PlacanjeKarticom.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pretraga.xaml.cs">
+      <DependentUpon>Pretraga.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PretragaDestinacija.xaml.cs">
+      <DependentUpon>PretragaDestinacija.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PretragaHoteli.xaml.cs">
+      <DependentUpon>PretragaHoteli.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PretragaTipUsluge.xaml.cs">
+      <DependentUpon>PretragaTipUsluge.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Prijava.xaml.cs">
+      <DependentUpon>Prijava.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Recenzije.xaml.cs">
+      <DependentUpon>Recenzije.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Registracija.xaml.cs">
+      <DependentUpon>Registracija.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Rezervacija.xaml.cs">
+      <DependentUpon>Rezervacija.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <AppxManifest Include="Package.appxmanifest">
@@ -107,6 +137,22 @@
     <None Include="FarAway_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\antalya.jpg" />
+    <Content Include="Assets\avion.jpg" />
+    <Content Include="Assets\cristal.jpg" />
+    <Content Include="Assets\exit.png" />
+    <Content Include="Assets\Lord have mercy.png" />
+    <Content Include="Assets\maestrocard.png" />
+    <Content Include="Assets\MasterCard.png" />
+    <Content Include="Assets\park villa bec.jpg" />
+    <Content Include="Assets\salvatore.jpg" />
+    <Content Include="Assets\sea side.png" />
+    <Content Include="Assets\sun.jpg" />
+    <Content Include="Assets\travel1.jpg" />
+    <Content Include="Assets\vacation.jpg" />
+    <Content Include="Assets\visa.jpg" />
+    <Content Include="Assets\vpb.jpg" />
+    <Content Include="Assets\zagreb.jpg" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />
     <Content Include="Assets\SplashScreen.scale-200.png" />
@@ -124,6 +170,46 @@
     <Page Include="MainPage.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Placanje.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PlacanjeKarticom.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pretraga.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PretragaDestinacija.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PretragaHoteli.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PretragaTipUsluge.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Prijava.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Recenzije.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Registracija.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Rezervacija.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
   </ItemGroup>
   <ItemGroup>

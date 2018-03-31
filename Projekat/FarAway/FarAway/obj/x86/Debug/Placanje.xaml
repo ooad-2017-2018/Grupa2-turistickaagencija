@@ -1,0 +1,75 @@
+﻿<Page
+    x:Class="FarAway.Placanje"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:FarAway"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid x:ConnectionId='1' x:Name="placanje" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+
+        </Grid.ColumnDefinitions>
+
+        <StackPanel Grid.ColumnSpan="3">
+            <Image HorizontalAlignment="Left" Height="262" Margin="-51,0,0,0" Source="Assets/sea side.png" Stretch="Fill"/>
+        </StackPanel>
+
+        <StackPanel x:ConnectionId='2' x:Name="lol" Grid.Row="1" Grid.Column="1" Grid.RowSpan="2">
+            <TextBox x:ConnectionId='3' x:Name="info" HorizontalAlignment="Left" Height="370" Margin="10,0,0,0" Text="Info o placanju" Width="407"/>
+            <Button x:ConnectionId='4' x:Name="dugme" Content="Potvrdi" HorizontalAlignment="Left" Height="44" Margin="83,30,0,0" Width="226"/>
+
+        </StackPanel>
+        <VisualStateManager.VisualStateGroups>
+            <VisualStateGroup x:ConnectionId='5' x:Name="VisualStateGroup">
+                <VisualState x:ConnectionId='6' x:Name="Wide">
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="800"/>
+                    </VisualState.StateTriggers>
+                    <VisualState.Setters>
+                        <Setter Target="placanje.Background" Value="#FFB900"/>
+
+                    </VisualState.Setters>
+                </VisualState>
+
+                <VisualState x:ConnectionId='7' x:Name="Narrow">
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="0"/>
+                    </VisualState.StateTriggers>
+                    <VisualState.Setters>
+
+
+                        <!--   <Setter Target=" slika.Visibility" Value="collapsed"/>-->
+                        <Setter Target="placanje.Background" Value="#744DA9"/>
+                        <Setter Target="info.(Grid.Row)" Value="1"/>
+                        <Setter Target="info.(Grid.Column)" Value="0"/>
+                        <Setter Target="info.(Grid.ColumnSpan)" Value="3"/>
+                        <Setter Target="info.(Grid.RowSpan)" Value="3"/>
+
+                        <Setter Target="dugme.(Grid.Row)" Value="1"/>
+                        <Setter Target="dugme.(Grid.Column)" Value="0"/>
+                        <Setter Target="dugme.(Grid.ColumnSpan)" Value="3"/>
+                        <Setter Target="dugme.(Grid.RowSpan)" Value="3"/>
+
+
+
+
+                    </VisualState.Setters>
+                </VisualState>
+            </VisualStateGroup>
+        </VisualStateManager.VisualStateGroups>
+
+    </Grid>
+</Page>
+
