@@ -132,7 +132,7 @@ namespace FarAway.FarAway_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[13];
+            _typeNameTable = new string[14];
             _typeNameTable[0] = "FarAway.MainPage";
             _typeNameTable[1] = "Windows.UI.Xaml.Controls.Page";
             _typeNameTable[2] = "Windows.UI.Xaml.Controls.UserControl";
@@ -146,8 +146,9 @@ namespace FarAway.FarAway_XamlTypeInfo
             _typeNameTable[10] = "FarAway.Recenzije";
             _typeNameTable[11] = "FarAway.Registracija";
             _typeNameTable[12] = "FarAway.Rezervacija";
+            _typeNameTable[13] = "FarAway.StranicaKorisnika";
 
-            _typeTable = new global::System.Type[13];
+            _typeTable = new global::System.Type[14];
             _typeTable[0] = typeof(global::FarAway.MainPage);
             _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.Page);
             _typeTable[2] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
@@ -161,6 +162,7 @@ namespace FarAway.FarAway_XamlTypeInfo
             _typeTable[10] = typeof(global::FarAway.Recenzije);
             _typeTable[11] = typeof(global::FarAway.Registracija);
             _typeTable[12] = typeof(global::FarAway.Rezervacija);
+            _typeTable[13] = typeof(global::FarAway.StranicaKorisnika);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -206,6 +208,7 @@ namespace FarAway.FarAway_XamlTypeInfo
         private object Activate_10_Recenzije() { return new global::FarAway.Recenzije(); }
         private object Activate_11_Registracija() { return new global::FarAway.Registracija(); }
         private object Activate_12_Rezervacija() { return new global::FarAway.Rezervacija(); }
+        private object Activate_13_StranicaKorisnika() { return new global::FarAway.StranicaKorisnika(); }
 
         private global::Windows.UI.Xaml.Markup.IXamlType CreateXamlType(int typeIndex)
         {
@@ -298,6 +301,13 @@ namespace FarAway.FarAway_XamlTypeInfo
             case 12:   //  FarAway.Rezervacija
                 userType = new global::FarAway.FarAway_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
                 userType.Activator = Activate_12_Rezervacija;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 13:   //  FarAway.StranicaKorisnika
+                userType = new global::FarAway.FarAway_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_13_StranicaKorisnika;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;

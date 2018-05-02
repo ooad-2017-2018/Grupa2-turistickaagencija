@@ -7,7 +7,11 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid x:ConnectionId='1' x:Name="registracija" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <Grid x:ConnectionId='1' x:Name="registracija">
+
+        <Grid.Background>
+            <ImageBrush ImageSource="Assets/ooad slike/hotness.jpg" AlignmentX="Center" AlignmentY="Center" Opacity="0.5" />
+        </Grid.Background>
 
         <Grid.RowDefinitions>
             <RowDefinition/>
@@ -21,71 +25,79 @@
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
 
-        <StackPanel Grid.ColumnSpan="3">
-            <Image HorizontalAlignment="Left" Height="237" Source="Assets/Lord have mercy.png" Stretch="Fill"/>
+       
+
+        <StackPanel x:ConnectionId='2' x:Name="unos1" Grid.Row="1" Grid.Column="1">
+            <TextBlock HorizontalAlignment="Left" Height="46" Margin="50,0,0,0" Text="Ime" TextWrapping="Wrap" Width="75" FontFamily="Bradley Hand ITC" FontSize="25" FontWeight="Bold" />
+            <TextBox HorizontalAlignment="Left" Height="18" Margin="100,-60,0,0"  Width="131" Background="White"/>
+            <TextBlock HorizontalAlignment="Left" Height="46" Margin="10,0,0,0" Text="Prezime" TextWrapping="Wrap" Width="85" FontFamily="Bradley Hand ITC" FontSize="24" TextAlignment="Left" FontWeight="Bold"/>
+            <TextBox HorizontalAlignment="Left" Height="18" Margin="100,-70,0,0"  Width="131" Background="White"/>
+            <TextBlock HorizontalAlignment="Left" Height="25" Margin="10,0,0,0" Text="E-mail" TextWrapping="Wrap" Width="85" FontFamily="Bradley Hand ITC" FontSize="25" FontWeight="Bold"/>
+            <TextBox HorizontalAlignment="Left" Height="18" Margin="100,-40,0,0" Width="131" Background="White"/>
+            <TextBlock HorizontalAlignment="Left" Height="25" Margin="10,0,0,0" Text="Datum rodjenja" TextWrapping="Wrap" Width="85" FontFamily="Bradley Hand ITC" FontSize="25" FontWeight="Bold"/>
+            <CalendarDatePicker HorizontalAlignment="Left" Height="35" Margin="100,-25,0,0" Width="131" Background="White"/>
+            <TextBlock HorizontalAlignment="Left" Height="30" Margin="10,15,0,0" Text="Username" TextWrapping="Wrap" Width="110" FontFamily="Bradley Hand ITC" FontSize="25" FontWeight="Bold"/>
+            <TextBox HorizontalAlignment="Left" Height="25" Margin="125,-35,0,0" Width="110" Background="White"/>
+            <TextBlock HorizontalAlignment="Left" Height="28" Margin="10,5,0,0"  Text="Password" TextWrapping="Wrap" Width="110" FontFamily="Bradley Hand ITC" FontSize="25" FontWeight="Bold"/>
+            <PasswordBox HorizontalAlignment="Left" Height="25" Margin="125,-30,0,0" Width="110" Background="White"/>
         </StackPanel>
 
-        <StackPanel x:ConnectionId='2' x:Name="unos1" Grid.Row="1">
-            <TextBlock HorizontalAlignment="Left" Height="46" Margin="50,0,0,0" Text="Ime" TextWrapping="Wrap" Width="75"/>
-            <TextBox HorizontalAlignment="Left" Height="18" Margin="100,-60,0,0" Text="TextBox" Width="131"/>
-            <TextBlock HorizontalAlignment="Left" Height="46" Margin="50,0,0,0" Text="Prezime" TextWrapping="Wrap" Width="75"/>
-            <TextBox HorizontalAlignment="Left" Height="18" Margin="100,-70,0,0" Text="TextBox" Width="131"/>
-            <TextBlock HorizontalAlignment="Left" Height="25" Margin="50,0,0,0" Text="E-mail" TextWrapping="Wrap" Width="85"/>
-            <TextBox HorizontalAlignment="Left" Height="18" Margin="100,-40,0,0" Text="TextBox" Width="131"/>
-            <TextBlock HorizontalAlignment="Left" Height="25" Margin="50,0,0,0" Text="Datum rodjenja" TextWrapping="Wrap" Width="85"/>
-            <CalendarDatePicker HorizontalAlignment="Left" Height="35" Margin="100,-25,0,0" Width="131"/>
-            <TextBlock HorizontalAlignment="Left" Height="30" Margin="50,15,0,0" Text="Username" TextWrapping="Wrap" Width="70"/>
-            <TextBox HorizontalAlignment="Left" Height="25" Margin="125,-35,0,0" Text="TextBox" Width="110"/>
-            <TextBlock HorizontalAlignment="Left" Height="28" Margin="50,10,0,0"  Text="Password" TextWrapping="Wrap" Width="67"/>
-            <PasswordBox HorizontalAlignment="Left" Height="25" Margin="125,-30,0,0" Width="110"/>
+        <StackPanel x:ConnectionId='3' x:Name="unos2" Grid.Row="2" Grid.Column="1">
+            <TextBlock HorizontalAlignment="Left" Height="60" Margin="10,0,0,0" Text="Potvrdi password" TextWrapping="Wrap" Width="100" FontFamily="Bradley Hand ITC" FontSize="25" FontWeight="Bold"/>
+            <PasswordBox HorizontalAlignment="Left" Height="34" Margin="125,-50,0,0" Width="110" Background="White"/>
+            <Button Content="Registruj se" HorizontalAlignment="Left" Height="42" Margin="75,0,0,0" Width="160" Background="White"/>
         </StackPanel>
 
-        <StackPanel x:ConnectionId='3' x:Name="unos2" Grid.Row="2">
-            <TextBlock HorizontalAlignment="Left" Height="50" Margin="50,0,0,0" Text="Potvrdi password" TextWrapping="Wrap" Width="100"/>
-            <PasswordBox HorizontalAlignment="Left" Height="34" Margin="125,-50,0,0" Width="110"/>
-            <Button Content="Registruj se" HorizontalAlignment="Left" Height="42" Margin="75,0,0,0" Width="200"/>
-        </StackPanel>
+        <Button x:ConnectionId='4' x:Name="naziv" Grid.ColumnSpan="2" Grid.Column="1" HorizontalAlignment="Stretch" HorizontalContentAlignment="Stretch" Background="Transparent" Height="158" Margin="250,20,0,0" VerticalAlignment="Top" Width="649"                    >
+            <TextBlock x:ConnectionId='6' x:Name="tekst" Text="FAR AWAY" FontFamily="Forte" FontSize="100" Foreground="Black"   />
+        </Button> 
+        <TextBlock x:ConnectionId='5' x:Name="reg" Grid.ColumnSpan="2" Grid.Column="1"  HorizontalAlignment="Left" Height="74" Margin="250,156,0,0" Text="Registrujte se" TextWrapping="Wrap" VerticalAlignment="Top" Width="508" FontFamily="Forte" FontSize="50" TextAlignment="Right"/>
 
-        <StackPanel x:ConnectionId='4' x:Name="img1" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="2">
-            <Image x:ConnectionId='7' x:Name="travel" HorizontalAlignment="Left" Height="222" Margin="223,10,0,0" Width="433" Source="Assets/travel1.jpg" Stretch="Fill"/>
-        </StackPanel>
 
-        <StackPanel x:ConnectionId='5' x:Name="img2" Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="2">
-            <Image x:ConnectionId='6' x:Name="avion" HorizontalAlignment="Left" Height="222" Margin="223,10,0,0" Width="433" Source="Assets/avion.jpg" Stretch="Fill"/>
-        </StackPanel>
+
+
+
 
         <VisualStateManager.VisualStateGroups>
-            <VisualStateGroup x:ConnectionId='8' x:Name="VisualStateGroup">
-                <VisualState x:ConnectionId='9' x:Name="Wide">
+            <VisualStateGroup x:ConnectionId='7' x:Name="VisualStateGroup">
+                <VisualState x:ConnectionId='8' x:Name="Wide">
                     <VisualState.StateTriggers>
                         <AdaptiveTrigger MinWindowWidth="800"/>
                     </VisualState.StateTriggers>
                     <VisualState.Setters>
-
-                        <Setter Target="registracija.Background" Value="#C30052"/>
-                        <Setter Target="travel.Visibility" Value="visiable"/>
-                        <Setter Target="avion.Visibility" Value="visiable"/>
-
-
-
-
-
+                      
                     </VisualState.Setters>
                 </VisualState>
 
-                <VisualState x:ConnectionId='10' x:Name="Narrow">
+                <VisualState x:ConnectionId='9' x:Name="Narrow">
                     <VisualState.StateTriggers>
                         <AdaptiveTrigger MinWindowWidth="0"/>
                     </VisualState.StateTriggers>
                     <VisualState.Setters>
 
-                        <Setter Target="registracija.Background" Value="#C30052"/>
-                        <Setter Target="travel.Visibility" Value="collapsed"/>
-                        <Setter Target="avion.Visibility" Value="collapsed"/>
+
+                        <Setter Target="naziv.(Grid.Column)" Value="0"/>
+                        <Setter Target="naziv.Margin" Value="0,20,0,0"/>
+                        <Setter Target="tekst.FontSize" Value="80"/>
+                        <Setter Target="naziv.(Grid.ColumnSpan)" Value="3"/>
 
 
+                        <Setter Target="reg.(Grid.Column)" Value="0"/>
+                        <Setter Target="reg.Margin" Value="20,140,0,0"/>
+                        <Setter Target="reg.(Grid.ColumnSpan)" Value="3"/>
+                        <Setter Target="reg.FontSize" Value="40"/>
+                        <Setter Target="reg.TextAlignment" Value="left"/>
+
+                        <Setter Target="unos1.(Grid.Column)" Value="0"/>
                         <Setter Target="unos1.(Grid.ColumnSpan)" Value="3"/>
+
+                        <Setter Target="unos2.(Grid.Column)" Value="0"/>
                         <Setter Target="unos2.(Grid.ColumnSpan)" Value="3"/>
+                        
+
+
+                       
+                      
 
 
                     </VisualState.Setters>

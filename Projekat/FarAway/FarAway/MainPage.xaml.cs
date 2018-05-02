@@ -27,14 +27,14 @@ namespace FarAway
             this.InitializeComponent();
         }
 
-        private void Button_Click_1(object sender, RoutedEventArgs e)
+        private void bPrijava_Click(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(Recenzije)); 
+            this.Frame.Navigate(typeof(StranicaKorisnika));
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void bRegistracija_Click(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(PlacanjeKarticom));
+            this.Frame.Navigate(typeof(Registracija));
         }
     }
 }

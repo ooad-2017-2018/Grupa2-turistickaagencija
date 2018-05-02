@@ -23,24 +23,24 @@
         </Grid.ColumnDefinitions>
 
         <StackPanel Grid.ColumnSpan="3">
-            <Image HorizontalAlignment="Left" Height="270" Margin="10,0,0,0" Source="Assets/sea side.png" Stretch="Fill"/>
+            <Image HorizontalAlignment="Left" Height="270" Margin="10,0,0,0" Source="Assets/ooad slike/sea side.png" Stretch="Fill"/>
         </StackPanel>
 
-        <StackPanel x:ConnectionId='1' x:Name="maestro" Grid.Row="1" >
+        <StackPanel x:Name="maestro" Grid.Row="1" >
             <TextBlock HorizontalAlignment="Left" Height="43" Margin="0,0,0,0" Grid.Row="1" Text="Prihvatamo sljedece kartice" TextWrapping="Wrap" VerticalAlignment="Top" Width="311"/>
-            <Image HorizontalAlignment="Left" Height="150" Margin="61,0,0,0" Width="272" Source="Assets/maestrocard.png" Stretch="Fill"/>
+            <Image HorizontalAlignment="Left" Height="150" Margin="61,0,0,0" Width="272" Source="Assets/ooad slike/maestrocard.png" Stretch="Fill"/>
         </StackPanel>
 
-        <StackPanel x:ConnectionId='2' x:Name="visa" Grid.Row="1" Grid.Column="1">
-            <Image HorizontalAlignment="Left" Height="149" Margin="61,43,0,0" Width="290" Source="Assets/visa.jpg" Stretch="Fill"/>
+        <StackPanel x:Name="visa" Grid.Row="1" Grid.Column="1">
+            <Image HorizontalAlignment="Left" Height="149" Margin="61,43,0,0" Width="290" Source="Assets/ooad slike/visa.jpg" Stretch="Fill"/>
         </StackPanel>
 
-        <StackPanel x:ConnectionId='3' x:Name="master" Grid.Row="1" Grid.Column="2">
-            <Image x:ConnectionId='6' x:Name="mastercard" HorizontalAlignment="Left" Height="125" Margin="61,43,0,0" Width="281" Source="Assets/MasterCard.png" Stretch="Fill"/>
+        <StackPanel x:Name="master" Grid.Row="1" Grid.Column="2">
+            <Image x:Name="mastercard" HorizontalAlignment="Left" Height="125" Margin="61,43,0,0" Width="281" Source="Assets/ooad slike/MasterCard.png" Stretch="Fill"/>
 
         </StackPanel>
 
-        <StackPanel x:ConnectionId='4' x:Name="unos" Grid.Row="2" Grid.Column="1">
+        <StackPanel x:Name="unos" Grid.Row="2" Grid.Column="1">
             <TextBlock HorizontalAlignment="Left" Height="37" Margin="0,0,0,0" Text="Ime vlasnika kartice" TextWrapping="Wrap" Width="112"/>
             <TextBox HorizontalAlignment="Left" Height="40" Margin="105,-37,0,0" Text="TextBox" Width="200"/>
             <TextBlock HorizontalAlignment="Left" Height="37" Margin="00,10,0,0" Text="Broj kreditne kartice" TextWrapping="Wrap" Width="97"/>
@@ -51,11 +51,11 @@
 
         </StackPanel>
         
-        <TextBlock x:ConnectionId='5' x:Name="poruka" Grid.Column="2" HorizontalAlignment="Center" Height="161" Margin="10,36,0,0" Grid.Row="2" Text="Jos samo jedan korak do putovanja iz snova" TextAlignment="Center" VerticalAlignment="Center" TextWrapping="Wrap" Padding="50" Width="356" Foreground="DeepSkyBlue"/>
+        <TextBlock x:Name="poruka" Grid.Column="2" HorizontalAlignment="Center" Height="161" Margin="10,36,0,0" Grid.Row="2" Text="Jos samo jedan korak do putovanja iz snova" TextAlignment="Center" VerticalAlignment="Center" TextWrapping="Wrap" Padding="50" Width="356" Foreground="DeepSkyBlue"/>
 
         <VisualStateManager.VisualStateGroups>
-            <VisualStateGroup x:ConnectionId='7' x:Name="VisualStateGroup">
-                <VisualState x:ConnectionId='8' x:Name="Wide">
+            <VisualStateGroup x:Name="VisualStateGroup">
+                <VisualState x:Name="Wide">
                     <VisualState.StateTriggers>
                         <AdaptiveTrigger MinWindowWidth="800"/>
                     </VisualState.StateTriggers>
@@ -65,7 +65,7 @@
                     </VisualState.Setters>
                 </VisualState>
 
-                <VisualState x:ConnectionId='9' x:Name="Narrow">
+                <VisualState x:Name="Narrow">
                     <VisualState.StateTriggers>
                         <AdaptiveTrigger MinWindowWidth="0"/>
                     </VisualState.StateTriggers>
@@ -111,4 +111,3 @@
 
     </Grid>
 </Page>
-

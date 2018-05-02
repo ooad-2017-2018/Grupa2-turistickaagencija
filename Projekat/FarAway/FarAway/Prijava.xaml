@@ -22,7 +22,7 @@
         </Grid.ColumnDefinitions>
 
         <StackPanel Grid.ColumnSpan="3">
-            <Image HorizontalAlignment="Left" Height="235" Margin="10,0,0,0" Source="Assets/sea side.png" Stretch="Fill" />
+            <Image HorizontalAlignment="Left" Height="235" Margin="10,0,0,0" Source="Assets/ooad slike/sea side.png" Stretch="Fill" />
         </StackPanel>
 
         <StackPanel x:Name="userpass" Grid.Row="1">
@@ -64,7 +64,7 @@
                     <VisualState.Setters>
                         <Setter Target="unos.(Grid.Row)" Value="1"/>
                         <Setter Target="unos.(Grid.Column)" Value="0"/>
-                        <Setter Target="unos.Margin" Value="125,0,0,0"/>                                         
+                        <Setter Target="unos.Margin" Value="125,0,0,0"/>
                         <Setter Target="unos.(Grid.RowSpan)" Value="3"/>
                         <Setter Target="unos.(Grid.ColumnSpan)" Value="3"/>
 
@@ -74,10 +74,6 @@
                         <Setter Target="pass.Margin" Value="0,30,0,0"/>
                         <Setter Target="user.(Grid.ColumnSpan)" Value="3"/>
                         <Setter Target="user.(Grid.RowSpan)" Value="3"/>
-
-
-
-
 
                     </VisualState.Setters>
                 </VisualState>

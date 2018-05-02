@@ -25,7 +25,7 @@
 
 
                 <StackPanel Grid.Row="0" Grid.ColumnSpan="3">
-                    <Image HorizontalAlignment="Left" Height="190" Margin="-36,0,0,0" Source="Assets/Lord have mercy.png" Stretch="Fill"/>
+                    <Image HorizontalAlignment="Left" Height="190" Margin="-36,0,0,0" Source="Assets/ooad slike/Lord have mercy.png" Stretch="Fill"/>
                 </StackPanel>
 
                 <StackPanel x:Name="pocetak" Grid.Row="1">
@@ -34,7 +34,7 @@
                 </StackPanel>
 
                 <StackPanel x:Name="sun" Grid.Row="1" Grid.Column="1">
-                    <Image HorizontalAlignment="Left" Height="180" Margin="10,0,0,0" Width="417" Source="Assets/sun.jpg" Stretch="Fill"/>
+                    <Image HorizontalAlignment="Left" Height="180" Margin="10,0,0,0" Width="417" Source="Assets/ooad slike/sun.jpg" Stretch="Fill"/>
                 </StackPanel>
 
                 <StackPanel x:Name="kraj" Grid.Row="1" Grid.Column="2">
@@ -51,15 +51,15 @@
                 </StackPanel>
 
                 <StackPanel x:Name="hotel1" Grid.Row="3">
-                    <Image HorizontalAlignment="Left" Height="149" Margin="55,10,0,0" Width="317" Source="Assets/cristal.jpg" Stretch="Fill"/>
+                    <Image HorizontalAlignment="Left" Height="149" Margin="55,10,0,0" Width="317" Source="Assets/ooad slike/cristal.jpg" Stretch="Fill"/>
                 </StackPanel>
 
                 <StackPanel x:Name="hotel2" Grid.Row="3" Grid.Column="1">
-                    <Image HorizontalAlignment="Left" Height="149" Margin="55,10,0,0" Width="317" Source="Assets/park villa bec.jpg" Stretch="Fill"/>
+                    <Image HorizontalAlignment="Left" Height="149" Margin="55,10,0,0" Width="317" Source="Assets/ooad slike/park villa bec.jpg" Stretch="Fill"/>
                 </StackPanel>
 
                 <StackPanel x:Name="hotel3" Grid.Row="3" Grid.Column="3">
-                    <Image HorizontalAlignment="Left" Height="149" Margin="55,10,0,0" Width="317" Source="Assets/salvatore.jpg" Stretch="Fill"/>
+                    <Image HorizontalAlignment="Left" Height="149" Margin="55,10,0,0" Width="317" Source="Assets/ooad slike/salvatore.jpg" Stretch="Fill"/>
                 </StackPanel>
           
         <VisualStateManager.VisualStateGroups>

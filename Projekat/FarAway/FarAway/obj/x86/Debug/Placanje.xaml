@@ -23,7 +23,7 @@
         </Grid.ColumnDefinitions>
 
         <StackPanel Grid.ColumnSpan="3">
-            <Image HorizontalAlignment="Left" Height="262" Margin="-51,0,0,0" Source="Assets/sea side.png" Stretch="Fill"/>
+            <Image HorizontalAlignment="Left" Height="262" Margin="-51,0,0,0" Source="Assets/ooad slike/sea side.png" Stretch="Fill"/>
         </StackPanel>
 
         <StackPanel x:ConnectionId='2' x:Name="lol" Grid.Row="1" Grid.Column="1" Grid.RowSpan="2">

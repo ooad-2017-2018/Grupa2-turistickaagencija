@@ -22,15 +22,15 @@
         </Grid.ColumnDefinitions>
 
         <StackPanel Grid.ColumnSpan="3" Grid.Row="0">
-            <Image HorizontalAlignment="Left" Height="177" Source="Assets/Lord have mercy.png" Stretch="Fill"/>
-            <AutoSuggestBox x:ConnectionId='4' x:Name="SearchBox" Height="50" Margin="3,0,36,0" VerticalAlignment="Top" QueryIcon="Find" PlaceholderText="Pretrazite svoje izlete"/>
+            <Image HorizontalAlignment="Left" Height="177" Source="Assets/ooad slike/Lord have mercy.png" Stretch="Fill"/>
+            <AutoSuggestBox x:ConnectionId='4' x:Name="SearchBox" Height="46" Margin="3,0,36,0" VerticalAlignment="Top" QueryIcon="Find" PlaceholderText="Pretrazite svoje izlete"/>
         </StackPanel>
 
         <StackPanel x:ConnectionId='2' x:Name="izleti" Grid.Row="1" Grid.Column="1">
             <TextBlock HorizontalAlignment="Left" Height="25" Margin="25,10,0,0" Text="Vasi izleti"  TextWrapping="Wrap" Width="192"/>
             <FlipView HorizontalAlignment="Left" Height="186" Margin="25,0,0,0" Width="369" >
-                <Image Source="Assets/exit.png" Stretch="Fill"/>
-                <Image Source="Assets/antalya.jpg" Stretch="Fill"/>
+                <Image Source="Assets/ooad slike/exit.png" Stretch="Fill"/>
+                <Image Source="Assets/ooad slike/antalya.jpg" Stretch="Fill"/>
             </FlipView>
         </StackPanel>
 

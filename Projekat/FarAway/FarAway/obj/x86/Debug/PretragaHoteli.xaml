@@ -7,7 +7,7 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <Grid x:ConnectionId='1' x:Name="photeli" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
@@ -30,52 +30,72 @@
                 </Grid.ColumnDefinitions>
 
                 <StackPanel Grid.ColumnSpan="3">
-                    <Image x:ConnectionId='5' x:Name="SeaSide" HorizontalAlignment="Left" Height="298" Margin="0,0,2,0" Source="Assets/sea side.png" Stretch="Fill"/>
-                    <AutoSuggestBox x:ConnectionId='6' x:Name="SearchBox" Height="46" Margin="56,30,36,0" VerticalAlignment="Top" QueryIcon="Find" PlaceholderText="Search"/>
+                    <Image x:ConnectionId='12' x:Name="hoteli" HorizontalAlignment="Stretch" Height="298" Margin="0,0,2,0" Source="Assets/ooad slike/hoteli.jpg" Stretch="Fill"/>
+                    <AutoSuggestBox x:ConnectionId='13' x:Name="SearchBox" Height="46" Margin="56,30,36,0" VerticalAlignment="Top" QueryIcon="Find" PlaceholderText="Search"/>
                 </StackPanel>
-                <TextBlock Grid.ColumnSpan="3" HorizontalAlignment="Left" Height="31" Margin="48,10,0,0" Grid.Row="1" Text="Najpopularnij Hoteli" TextWrapping="Wrap" VerticalAlignment="Top" Width="268"/>
+                <TextBlock Grid.ColumnSpan="3" HorizontalAlignment="Left" Height="31" Margin="48,10,0,0" Grid.Row="1" Text="Najpopularnije Destinacije" TextWrapping="Wrap" VerticalAlignment="Top" Width="268"/>
 
-                <StackPanel x:ConnectionId='1' x:Name="img1" Grid.Row="1">
-                    <Image x:ConnectionId='4' x:Name="cristal" HorizontalAlignment="Stretch" Height="120" Margin="48,35,0,0" Grid.Row="1" VerticalAlignment="Top" Width="243" Source="Assets/cristal.jpg"/>
-                    <Button Content="Crystal Hotel" HorizontalAlignment="Stretch" Height="45" Margin="40,5,0,0" Width="130"/>
+                <StackPanel x:ConnectionId='2' x:Name="img1" Grid.Row="1" >
+
+                    <Image x:ConnectionId='7' x:Name="cristal" HorizontalAlignment="Stretch" Height="120" Margin="48,35,0,0" Grid.Row="1" VerticalAlignment="Top" Width="243" Source="Assets/ooad slike/cristal.jpg"/>
+                    <Button x:ConnectionId='8' x:Name="bcristal" Content="Zagreb" HorizontalAlignment="Stretch" Height="45" Margin="40,5,0,0" Width="130"/>
+                    <FlipView x:ConnectionId='9' x:Name="fwhoteli" HorizontalAlignment="Left" Height="163" Margin="48,50,0,0" Width="320" Visibility="Collapsed">
+                        <Button x:ConnectionId='10' x:Name="bimg1">
+                            <Image Source="Assets/ooad slike/cristal.jpg" Stretch="Fill"/>
+                        </Button>
+                        <Button x:ConnectionId='11' x:Name="bimg2">
+                            <Image Source="Assets/ooad slike/salvatore.jpg" Stretch="Fill"/>
+                        </Button>
+                    </FlipView>
                 </StackPanel>
-                <StackPanel x:ConnectionId='2' x:Name="img2" Grid.Row="1" Grid.Column="1">
-                    <Image x:ConnectionId='3' x:Name="parkvilla"  Grid.Column="1" HorizontalAlignment="Stretch" Height="120" Margin="48,35,0,0" Grid.Row="1" VerticalAlignment="Top" Width="280" Source="Assets/park villa bec.jpg"/>
-                    <Button Content="Park Villa" HorizontalAlignment="Stretch" Height="45" Margin="40,5,0,0" Width="130"/>
+
+                <StackPanel x:ConnectionId='3' x:Name="img2" Grid.Row="1" Grid.Column="1">
+                    <Image x:ConnectionId='4' x:Name="parvilla" Grid.Column="1" HorizontalAlignment="Stretch" Height="120" Margin="48,35,0,0" Grid.Row="1" VerticalAlignment="Top" Width="280" Source="Assets/ooad slike/park villa bec.jpg"/>
+                    <Button x:ConnectionId='5' x:Name="bparkvilla" Content="Antalya" HorizontalAlignment="Stretch" Height="45" Margin="40,5,0,0" Width="130"/>
+                    <TextBox x:ConnectionId='6' x:Name="hinfo" HorizontalAlignment="Stretch" Height="138" Margin="20,60,0,0" Width="400" Visibility="Collapsed" Text="info o destinaciji"/>
+
                 </StackPanel>
             </Grid>
         </ScrollViewer>
 
         <VisualStateManager.VisualStateGroups>
-            <VisualStateGroup x:ConnectionId='7' x:Name="VisualStateGroup">
-                <VisualState x:ConnectionId='8' x:Name="Wide">
+            <VisualStateGroup x:ConnectionId='14' x:Name="VisualStateGroup">
+                <VisualState x:ConnectionId='15' x:Name="Wide">
                     <VisualState.StateTriggers>
                         <AdaptiveTrigger MinWindowWidth="800"/>
                     </VisualState.StateTriggers>
                     <VisualState.Setters>
-
+                        <Setter Target="photeli.Background" Value="#C30052"/>
                     </VisualState.Setters>
                 </VisualState>
 
-                <VisualState x:ConnectionId='9' x:Name="Narrow">
+                <VisualState x:ConnectionId='16' x:Name="Narrow">
                     <VisualState.StateTriggers>
                         <AdaptiveTrigger MinWindowWidth="0"/>
                     </VisualState.StateTriggers>
                     <VisualState.Setters>
 
-                        <Setter Target="img1.(Grid.Row)" Value="1"/>
-                        <Setter Target="img1.(Grid.Column)" Value="0"/>
-                        <Setter Target="img1.(Grid.ColumnSpan)" Value="3"/>
+                        <Setter Target="photeli.Background" Value="#E74856"/>
 
-                        <Setter Target="img2.(Grid.Row)" Value="2"/>
-                        <Setter Target="img2.(Grid.Column)" Value="0"/>
-                        <Setter Target="img2.(Grid.ColumnSpan)" Value="3"/>
-                        <Setter Target="img2.(Grid.RowSpan)" Value="3"/>
+                        <Setter Target="cristal.Visibility" Value="collapsed"/>
+                        <Setter Target="bcristal.Visibility" Value="collapsed"/>
+                        <Setter Target="parvilla.Visibility" Value="collapsed"/>
+                        <Setter Target="bparkvilla.Visibility" Value="collapsed"/>
 
+                        <Setter Target="fwhoteli.Visibility" Value="visible"/>
+                        <Setter Target="fwhoteli.(Grid.ColumnSpan)" Value="3"/>
+                        <Setter Target="fwhoteli.Width" Value="auto"/>
+
+                        <Setter Target="hinfo.Visibility" Value="visible"/>
+                        <Setter Target="hinfo.(Grid.ColumnSpan)" Value="3"/>
+                        <Setter Target="hinfo.Width" Value="auto"/>
+                        
                     </VisualState.Setters>
                 </VisualState>
             </VisualStateGroup>
         </VisualStateManager.VisualStateGroups>
+
+
     </Grid>
 </Page>
 

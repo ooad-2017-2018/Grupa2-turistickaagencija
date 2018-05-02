@@ -29,18 +29,18 @@
                 </Grid.ColumnDefinitions>
 
                 <StackPanel Grid.ColumnSpan="3">
-                    <Image x:Name="SeaSide" HorizontalAlignment="Stretch" Height="167" Margin="0,0,2,0" Source="Assets/Lord have mercy.png" Stretch="Fill"/>
+                    <Image x:Name="SeaSide" HorizontalAlignment="Stretch" Height="167" Margin="0,0,2,0" Source="Assets/ooad slike/Lord have mercy.png" Stretch="Fill"/>
                     <AutoSuggestBox x:Name="SearchBox" Height="46" Margin="56,15,36,0" VerticalAlignment="Top" QueryIcon="Find" PlaceholderText="Search"/>
                   
                 </StackPanel>
                 <TextBlock Grid.ColumnSpan="3" HorizontalAlignment="Left" Height="31" Margin="48,110,0,0" Grid.Row="1" Text="Najpopularniji Izleti" TextWrapping="Wrap" VerticalAlignment="Top" Width="268"/>
 
                 <StackPanel x:Name="img1" Grid.Row="1" Grid.RowSpan="2">
-                    <Image x:Name="Exit"  HorizontalAlignment="Stretch" Height="120" Margin="48,140,0,0" Grid.Row="1" VerticalAlignment="Top" Width="243" Source="Assets/exit.png"/>
+                    <Image x:Name="Exit"  HorizontalAlignment="Stretch" Height="120" Margin="48,140,0,0" Grid.Row="1" VerticalAlignment="Top" Width="243" Source="Assets/ooad slike/exit.png"/>
                     <Button Content="Exit Festival" HorizontalAlignment="Stretch" Height="45" Margin="40,0,0,0" Width="130"/>
                 </StackPanel>
                 <StackPanel x:Name="img2" Grid.Row="1" Grid.Column="1" Grid.RowSpan="2">
-                    <Image Grid.Column="1" HorizontalAlignment="Stretch" Height="120" Margin="48,145,0,0" Grid.Row="1" VerticalAlignment="Top" Width="280" Source="Assets/antalya.jpg"/>
+                    <Image Grid.Column="1" HorizontalAlignment="Stretch" Height="120" Margin="48,145,0,0" Grid.Row="1" VerticalAlignment="Top" Width="280" Source="Assets/ooad slike/antalya.jpg"/>
                     <Button Content="Bec-Prag-Bratislava" HorizontalAlignment="Stretch" Height="45" Margin="40,5,0,0" Width="130"/>
                 </StackPanel>
                 <Button x:Name="kultura" Content="Kultura" Grid.ColumnSpan="3" HorizontalAlignment="Left" Height="51" Grid.Row="1" VerticalAlignment="Top" Width="427"/>

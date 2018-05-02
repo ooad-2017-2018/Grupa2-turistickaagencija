@@ -1,0 +1,110 @@
+﻿<Page
+    x:Class="FarAway.PretragaDestinacija"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:FarAway"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid x:Name="pdestinacije" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <ScrollViewer Grid.Row="0" Grid.ColumnSpan="3" Grid.RowSpan="3">
+
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <StackPanel Grid.ColumnSpan="3">
+                    <Image x:Name="SeaSide" HorizontalAlignment="Stretch" Height="298" Margin="0,0,2,0" Source="Assets/ooad slike/destinacije.jpg" Stretch="Fill"/>
+                    <AutoSuggestBox x:Name="SearchBox" Height="46" Margin="56,30,36,0" VerticalAlignment="Top" QueryIcon="Find" PlaceholderText="Search"/>
+                </StackPanel>
+                <TextBlock Grid.ColumnSpan="3" HorizontalAlignment="Left" Height="31" Margin="48,10,0,0" Grid.Row="1" Text="Najpopularnije Destinacije" TextWrapping="Wrap" VerticalAlignment="Top" Width="268"/>
+
+                <StackPanel x:Name="img1" Grid.Row="1" >
+                    
+                    <Image x:Name="zagreb" HorizontalAlignment="Stretch" Height="120" Margin="48,35,0,0" Grid.Row="1" VerticalAlignment="Top" Width="243" Source="Assets/ooad slike/zagreb.jpg"/>
+                    <Button x:Name="bzagreb" Content="Zagreb" HorizontalAlignment="Stretch" Height="45" Margin="40,5,0,0" Width="130"/>
+                    <FlipView x:Name="fwdestinacije" HorizontalAlignment="Left" Height="163" Margin="48,50,0,0" Width="320" Visibility="Collapsed">
+                        <Button x:Name="bimg1">
+                            <Image Source="Assets/ooad slike/zagreb.jpg" Stretch="Fill"/>                           
+                        </Button>
+                        <Button x:Name="bimg2">
+                            <Image Source="Assets/ooad slike/antalya.jpg" Stretch="Fill"/>
+                        </Button>
+                    </FlipView>
+                </StackPanel>
+                
+                <StackPanel x:Name="img2" Grid.Row="1" Grid.Column="1">
+                    <Image x:Name="antalya" Grid.Column="1" HorizontalAlignment="Stretch" Height="120" Margin="48,35,0,0" Grid.Row="1" VerticalAlignment="Top" Width="280" Source="Assets/ooad slike/antalya.jpg"/>
+                    <Button x:Name="bantalya" Content="Antalya" HorizontalAlignment="Stretch" Height="45" Margin="40,5,0,0" Width="130"/>
+                    <TextBox x:Name="dinfo" HorizontalAlignment="Stretch" Height="138" Margin="20,60,0,0" Width="400" Visibility="Collapsed" Text="info o destinaciji"/>
+
+                </StackPanel>
+            </Grid>
+        </ScrollViewer>
+
+        <VisualStateManager.VisualStateGroups>
+            <VisualStateGroup x:Name="VisualStateGroup">
+                <VisualState x:Name="Wide">
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="800"/>
+                    </VisualState.StateTriggers>
+                    <VisualState.Setters>
+                        <Setter Target="pdestinacije.Background" Value="#C30052"/>
+                    </VisualState.Setters>
+                </VisualState>
+
+                <VisualState x:Name="Narrow">
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="0"/>
+                    </VisualState.StateTriggers>
+                    <VisualState.Setters>
+
+                        <Setter Target="pdestinacije.Background" Value="#E74856"/>
+
+                        <Setter Target="zagreb.Visibility" Value="collapsed"/>
+                        <Setter Target="bzagreb.Visibility" Value="collapsed"/>
+                        <Setter Target="antalya.Visibility" Value="collapsed"/>
+                        <Setter Target="bantalya.Visibility" Value="collapsed"/>
+                        
+                        <Setter Target="fwdestinacije.Visibility" Value="visible"/>
+                        <Setter Target="fwdestinacije.(Grid.ColumnSpan)" Value="3"/>
+                        <Setter Target="fwdestinacije.Width" Value="auto"/>
+
+                        <Setter Target="dinfo.Visibility" Value="visible"/>
+                        <Setter Target="dinfo.(Grid.ColumnSpan)" Value="3"/>
+                        <Setter Target="dinfo.Width" Value="auto"/>
+
+
+                        <!--     <Setter Target="img1.(Grid.Row)" Value="1"/>
+                        <Setter Target="img1.(Grid.Column)" Value="0"/>
+                        <Setter Target="img1.(Grid.ColumnSpan)" Value="3"/>
+
+                        <Setter Target="img2.(Grid.Row)" Value="2"/>
+                        <Setter Target="img2.(Grid.Column)" Value="0"/>
+                        <Setter Target="img2.(Grid.ColumnSpan)" Value="3"/>
+                        <Setter Target="img2.(Grid.RowSpan)" Value="3"/>-->
+
+                    </VisualState.Setters>
+                </VisualState>
+            </VisualStateGroup>
+        </VisualStateManager.VisualStateGroups>
+
+
+    </Grid>
+</Page>
