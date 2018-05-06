@@ -7,7 +7,11 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <Grid x:Name="gPrijava">
+
+        <Grid.Background>
+            <ImageBrush ImageSource="ms-appx:///Assets/ooad slike/hotness.jpg" AlignmentX="Center" AlignmentY="Center" Opacity="0.5" />
+        </Grid.Background>
 
         <Grid.RowDefinitions>
             <RowDefinition/>
@@ -21,34 +25,36 @@
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
 
-        <StackPanel Grid.ColumnSpan="3">
-            <Image HorizontalAlignment="Left" Height="235" Margin="10,0,0,0" Source="Assets/ooad slike/sea side.png" Stretch="Fill" />
-        </StackPanel>
 
         <StackPanel x:Name="userpass" Grid.Row="1">
 
-            <TextBlock x:Name="user" HorizontalAlignment="Left" Height="37" TextAlignment="Right" Margin="160,70,0,0" TextWrapping="NoWrap" Text="Username" Width="255"/>
-            <TextBlock x:Name="pass" HorizontalAlignment="Left" TextAlignment="Right" Height="36" Margin="160,30,0,0" Text="Password" Width="255"/>
+            <TextBlock x:Name="user" HorizontalAlignment="Left" Height="37" TextAlignment="Right" Margin="160,10,0,0" TextWrapping="NoWrap" Text="Username" Width="255" FontFamily="Bradley Hand ITC" FontSize="35" FontWeight="Bold"/>
+            <TextBlock x:Name="pass" HorizontalAlignment="Left" TextAlignment="Right" Height="36" Margin="160,30,0,0" Text="Password" Width="255" FontFamily="Bradley Hand ITC" FontSize="35" FontWeight="Bold"/>
         </StackPanel>
 
         <StackPanel x:Name="unos" Grid.Row="1" Grid.Column="1">
-            <TextBlock x:Name="poruka" HorizontalAlignment="Left" Height="40" Text="Prijavite se" Width="427" TextWrapping="Wrap"/>
-            <TextBox HorizontalAlignment="Left" Height="37" Margin="10,30,0,0" Width="290"/>
-            <TextBox HorizontalAlignment="Left" Height="37" Margin="10,30,0,0" TextWrapping="Wrap" Width="290"/>
-            <Button Content="Prijava" HorizontalAlignment="Left" Height="37" Margin="95,20,4,0" Width="204"/>
+
+            <TextBox HorizontalAlignment="Left" Height="37" Margin="10,30,0,0" Width="290" Background="White" />
+            <TextBox HorizontalAlignment="Left" Height="37" Margin="10,30,0,0" TextWrapping="Wrap" Width="290" Background="White" />
+            <Button Content="Prijava" HorizontalAlignment="Left" Height="37" Margin="95,20,4,0" Width="204" Background="White"/>
 
         </StackPanel>
+        <Button x:Name="naziv" Grid.ColumnSpan="2" Grid.Column="1" HorizontalAlignment="Stretch" HorizontalContentAlignment="Stretch" Background="Transparent" Height="158" Margin="250,20,0,0" VerticalAlignment="Top" Width="649" Click="naziv_Click">
+            <TextBlock x:Name="tekst" Text="FAR AWAY" FontFamily="Forte" FontSize="100" Foreground="Black"   />
+        </Button>
+        <TextBlock x:Name="prijava" Grid.ColumnSpan="2" Grid.Column="1"  HorizontalAlignment="Left" Height="74" Margin="250,156,0,0" Text="Prijavite se" TextWrapping="Wrap" VerticalAlignment="Top" Width="508" FontFamily="Forte" FontSize="50" TextAlignment="Right"/>
+
 
         <VisualStateManager.VisualStateGroups>
             <VisualStateGroup x:Name="VisualStateGroup">
                 <VisualState x:Name="Wide">
                     <VisualState.StateTriggers>
-                        <AdaptiveTrigger MinWindowWidth="1200"/>
+                        <AdaptiveTrigger MinWindowWidth="800"/>
                     </VisualState.StateTriggers>
                     <VisualState.Setters>
                         <Setter Target="user.TextAlignment" Value="right"/>
                         <Setter Target="pass.TextAlignment" Value="right"/>
-                        <Setter Target="user.Margin" Value="160,70,0,0"/>
+                        <Setter Target="user.Margin" Value="160,30,0,0"/>
                         <Setter Target="pass.Margin" Value="160,30,0,0"/>
                         <Setter Target="unos.(Grid.RowSpan)" Value="3"/>
                         <Setter Target="unos.(Grid.ColumnSpan)" Value="3"/>
@@ -70,10 +76,25 @@
 
                         <Setter Target="user.TextAlignment" Value="left"/>
                         <Setter Target="pass.TextAlignment" Value="left"/>
-                        <Setter Target="user.Margin" Value="0,70,0,0"/>
+                        <Setter Target="user.Margin" Value="0,25,0,0"/>
                         <Setter Target="pass.Margin" Value="0,30,0,0"/>
                         <Setter Target="user.(Grid.ColumnSpan)" Value="3"/>
                         <Setter Target="user.(Grid.RowSpan)" Value="3"/>
+                        <Setter Target="user.FontSize" Value="28"/>
+                        <Setter Target="pass.FontSize" Value="28"/>
+
+                        <Setter Target="naziv.(Grid.Column)" Value="0"/>
+                        <Setter Target="naziv.Margin" Value="0,20,0,0"/>
+                        <Setter Target="tekst.FontSize" Value="80"/>
+                        <Setter Target="naziv.(Grid.ColumnSpan)" Value="3"/>
+
+                        <Setter Target="prijava.(Grid.Column)" Value="0"/>
+                        <Setter Target="prijava.Margin" Value="20,140,0,0"/>
+                        <Setter Target="prijava.(Grid.ColumnSpan)" Value="3"/>
+                        <Setter Target="prijava.FontSize" Value="60"/>
+                        <Setter Target="prijava.TextAlignment" Value="left"/>
+
+
 
                     </VisualState.Setters>
                 </VisualState>
