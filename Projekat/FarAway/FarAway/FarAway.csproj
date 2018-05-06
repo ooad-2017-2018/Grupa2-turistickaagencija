@@ -95,7 +95,10 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
-    <Compile Include="MainPage.xaml.cs">
+    <Compile Include="Korisnik.cs" />
+    <Compile Include="KorisnikLoginViewModel.cs" />
+    <Compile Include="KorisnikRegistracijaViewModel.cs" />
+    <Compile Include="View\MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="not now but soon\Placanje.xaml.cs">
@@ -116,22 +119,23 @@
     <Compile Include="not now but soon\PretragaTipUsluge.xaml.cs">
       <DependentUpon>PretragaTipUsluge.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Prijava.xaml.cs">
+    <Compile Include="View\Prijava.xaml.cs">
       <DependentUpon>Prijava.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="not now but soon\Recenzije.xaml.cs">
       <DependentUpon>Recenzije.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Registracija.xaml.cs">
+    <Compile Include="View\Registracija.xaml.cs">
       <DependentUpon>Registracija.xaml</DependentUpon>
     </Compile>
     <Compile Include="not now but soon\Rezervacija.xaml.cs">
       <DependentUpon>Rezervacija.xaml</DependentUpon>
     </Compile>
-    <Compile Include="StranicaKorisnika.xaml.cs">
+    <Compile Include="View\StranicaKorisnika.xaml.cs">
       <DependentUpon>StranicaKorisnika.xaml</DependentUpon>
     </Compile>
+    <Compile Include="tabela.cs" />
   </ItemGroup>
   <ItemGroup>
     <AppxManifest Include="Package.appxmanifest">
@@ -177,7 +181,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Page Include="MainPage.xaml">
+    <Page Include="View\MainPage.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -205,7 +209,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Prijava.xaml">
+    <Page Include="View\Prijava.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -213,7 +217,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Registracija.xaml">
+    <Page Include="View\Registracija.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -221,12 +225,15 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="StranicaKorisnika.xaml">
+    <Page Include="View\StranicaKorisnika.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
   </ItemGroup>
   <ItemGroup>
+    <PackageReference Include="Microsoft.Azure.Mobile.Client">
+      <Version>4.0.2</Version>
+    </PackageReference>
     <PackageReference Include="Microsoft.NETCore.UniversalWindowsPlatform">
       <Version>6.1.2</Version>
     </PackageReference>

@@ -1,16 +1,51 @@
+C:\Users\hp\Documents\GitHub\Grupa2-turistickaagencija\Projekat\FarAway\FarAway\obj\x86\Debug\FarAway.csprojResolveAssemblyReference.cache
+C:\Users\hp\Documents\GitHub\Grupa2-turistickaagencija\Projekat\FarAway\FarAway\obj\x86\Debug\App.g.i.cs
+C:\Users\hp\Documents\GitHub\Grupa2-turistickaagencija\Projekat\FarAway\FarAway\obj\x86\Debug\App.g.cs
+C:\Users\hp\Documents\GitHub\Grupa2-turistickaagencija\Projekat\FarAway\FarAway\obj\x86\Debug\not now but soon\Placanje.g.i.cs
+C:\Users\hp\Documents\GitHub\Grupa2-turistickaagencija\Projekat\FarAway\FarAway\obj\x86\Debug\not now but soon\Placanje.g.cs
+C:\Users\hp\Documents\GitHub\Grupa2-turistickaagencija\Projekat\FarAway\FarAway\obj\x86\Debug\not now but soon\PlacanjeKarticom.g.i.cs
+C:\Users\hp\Documents\GitHub\Grupa2-turistickaagencija\Projekat\FarAway\FarAway\obj\x86\Debug\not now but soon\PlacanjeKarticom.g.cs
+C:\Users\hp\Documents\GitHub\Grupa2-turistickaagencija\Projekat\FarAway\FarAway\obj\x86\Debug\not now but soon\Pretraga.g.i.cs
+C:\Users\hp\Documents\GitHub\Grupa2-turistickaagencija\Projekat\FarAway\FarAway\obj\x86\Debug\not now but soon\Pretraga.g.cs
+C:\Users\hp\Documents\GitHub\Grupa2-turistickaagencija\Projekat\FarAway\FarAway\obj\x86\Debug\not now but soon\PretragaDestinacija.g.i.cs
+C:\Users\hp\Documents\GitHub\Grupa2-turistickaagencija\Projekat\FarAway\FarAway\obj\x86\Debug\not now but soon\PretragaDestinacija.g.cs
+C:\Users\hp\Documents\GitHub\Grupa2-turistickaagencija\Projekat\FarAway\FarAway\obj\x86\Debug\not now but soon\PretragaHoteli.g.i.cs
+C:\Users\hp\Documents\GitHub\Grupa2-turistickaagencija\Projekat\FarAway\FarAway\obj\x86\Debug\not now but soon\PretragaHoteli.g.cs
+C:\Users\hp\Documents\GitHub\Grupa2-turistickaagencija\Projekat\FarAway\FarAway\obj\x86\Debug\not now but soon\PretragaTipUsluge.g.i.cs
+C:\Users\hp\Documents\GitHub\Grupa2-turistickaagencija\Projekat\FarAway\FarAway\obj\x86\Debug\not now but soon\PretragaTipUsluge.g.cs
+C:\Users\hp\Documents\GitHub\Grupa2-turistickaagencija\Projekat\FarAway\FarAway\obj\x86\Debug\not now but soon\Recenzije.g.i.cs
+C:\Users\hp\Documents\GitHub\Grupa2-turistickaagencija\Projekat\FarAway\FarAway\obj\x86\Debug\not now but soon\Recenzije.g.cs
+C:\Users\hp\Documents\GitHub\Grupa2-turistickaagencija\Projekat\FarAway\FarAway\obj\x86\Debug\not now but soon\Rezervacija.g.i.cs
+C:\Users\hp\Documents\GitHub\Grupa2-turistickaagencija\Projekat\FarAway\FarAway\obj\x86\Debug\not now but soon\Rezervacija.g.cs
+C:\Users\hp\Documents\GitHub\Grupa2-turistickaagencija\Projekat\FarAway\FarAway\obj\x86\Debug\XamlTypeInfo.g.cs
+C:\Users\hp\Documents\GitHub\Grupa2-turistickaagencija\Projekat\FarAway\FarAway\obj\x86\Debug\App.xaml
+C:\Users\hp\Documents\GitHub\Grupa2-turistickaagencija\Projekat\FarAway\FarAway\obj\x86\Debug\not now but soon\Placanje.xaml
+C:\Users\hp\Documents\GitHub\Grupa2-turistickaagencija\Projekat\FarAway\FarAway\obj\x86\Debug\not now but soon\PlacanjeKarticom.xaml
+C:\Users\hp\Documents\GitHub\Grupa2-turistickaagencija\Projekat\FarAway\FarAway\obj\x86\Debug\not now but soon\Pretraga.xaml
+C:\Users\hp\Documents\GitHub\Grupa2-turistickaagencija\Projekat\FarAway\FarAway\obj\x86\Debug\not now but soon\PretragaDestinacija.xaml
+C:\Users\hp\Documents\GitHub\Grupa2-turistickaagencija\Projekat\FarAway\FarAway\obj\x86\Debug\not now but soon\PretragaHoteli.xaml
+C:\Users\hp\Documents\GitHub\Grupa2-turistickaagencija\Projekat\FarAway\FarAway\obj\x86\Debug\not now but soon\PretragaTipUsluge.xaml
+C:\Users\hp\Documents\GitHub\Grupa2-turistickaagencija\Projekat\FarAway\FarAway\obj\x86\Debug\not now but soon\Recenzije.xaml
+C:\Users\hp\Documents\GitHub\Grupa2-turistickaagencija\Projekat\FarAway\FarAway\obj\x86\Debug\not now but soon\Rezervacija.xaml
+C:\Users\hp\Documents\GitHub\Grupa2-turistickaagencija\Projekat\FarAway\FarAway\obj\x86\Debug\App.xbf
+C:\Users\hp\Documents\GitHub\Grupa2-turistickaagencija\Projekat\FarAway\FarAway\obj\x86\Debug\not now but soon\Placanje.xbf
+C:\Users\hp\Documents\GitHub\Grupa2-turistickaagencija\Projekat\FarAway\FarAway\obj\x86\Debug\not now but soon\PlacanjeKarticom.xbf
+C:\Users\hp\Documents\GitHub\Grupa2-turistickaagencija\Projekat\FarAway\FarAway\obj\x86\Debug\not now but soon\Pretraga.xbf
+C:\Users\hp\Documents\GitHub\Grupa2-turistickaagencija\Projekat\FarAway\FarAway\obj\x86\Debug\not now but soon\PretragaDestinacija.xbf
+C:\Users\hp\Documents\GitHub\Grupa2-turistickaagencija\Projekat\FarAway\FarAway\obj\x86\Debug\not now but soon\PretragaHoteli.xbf
+C:\Users\hp\Documents\GitHub\Grupa2-turistickaagencija\Projekat\FarAway\FarAway\obj\x86\Debug\not now but soon\PretragaTipUsluge.xbf
+C:\Users\hp\Documents\GitHub\Grupa2-turistickaagencija\Projekat\FarAway\FarAway\obj\x86\Debug\not now but soon\Recenzije.xbf
+C:\Users\hp\Documents\GitHub\Grupa2-turistickaagencija\Projekat\FarAway\FarAway\obj\x86\Debug\not now but soon\Rezervacija.xbf
+C:\Users\hp\Documents\GitHub\Grupa2-turistickaagencija\Projekat\FarAway\FarAway\obj\x86\Debug\XamlSaveStateFile.xml
 C:\Users\hp\Documents\GitHub\Grupa2-turistickaagencija\Projekat\FarAway\FarAway\bin\x86\Debug\App.xbf
-C:\Users\hp\Documents\GitHub\Grupa2-turistickaagencija\Projekat\FarAway\FarAway\bin\x86\Debug\MainPage.xbf
-C:\Users\hp\Documents\GitHub\Grupa2-turistickaagencija\Projekat\FarAway\FarAway\bin\x86\Debug\Placanje.xbf
-C:\Users\hp\Documents\GitHub\Grupa2-turistickaagencija\Projekat\FarAway\FarAway\bin\x86\Debug\PlacanjeKarticom.xbf
-C:\Users\hp\Documents\GitHub\Grupa2-turistickaagencija\Projekat\FarAway\FarAway\bin\x86\Debug\Pretraga.xbf
-C:\Users\hp\Documents\GitHub\Grupa2-turistickaagencija\Projekat\FarAway\FarAway\bin\x86\Debug\PretragaDestinacija.xbf
-C:\Users\hp\Documents\GitHub\Grupa2-turistickaagencija\Projekat\FarAway\FarAway\bin\x86\Debug\PretragaHoteli.xbf
-C:\Users\hp\Documents\GitHub\Grupa2-turistickaagencija\Projekat\FarAway\FarAway\bin\x86\Debug\PretragaTipUsluge.xbf
-C:\Users\hp\Documents\GitHub\Grupa2-turistickaagencija\Projekat\FarAway\FarAway\bin\x86\Debug\Prijava.xbf
-C:\Users\hp\Documents\GitHub\Grupa2-turistickaagencija\Projekat\FarAway\FarAway\bin\x86\Debug\Recenzije.xbf
-C:\Users\hp\Documents\GitHub\Grupa2-turistickaagencija\Projekat\FarAway\FarAway\bin\x86\Debug\Registracija.xbf
-C:\Users\hp\Documents\GitHub\Grupa2-turistickaagencija\Projekat\FarAway\FarAway\bin\x86\Debug\Rezervacija.xbf
-C:\Users\hp\Documents\GitHub\Grupa2-turistickaagencija\Projekat\FarAway\FarAway\bin\x86\Debug\StranicaKorisnika.xbf
+C:\Users\hp\Documents\GitHub\Grupa2-turistickaagencija\Projekat\FarAway\FarAway\bin\x86\Debug\not now but soon\Placanje.xbf
+C:\Users\hp\Documents\GitHub\Grupa2-turistickaagencija\Projekat\FarAway\FarAway\bin\x86\Debug\not now but soon\PlacanjeKarticom.xbf
+C:\Users\hp\Documents\GitHub\Grupa2-turistickaagencija\Projekat\FarAway\FarAway\bin\x86\Debug\not now but soon\Pretraga.xbf
+C:\Users\hp\Documents\GitHub\Grupa2-turistickaagencija\Projekat\FarAway\FarAway\bin\x86\Debug\not now but soon\PretragaDestinacija.xbf
+C:\Users\hp\Documents\GitHub\Grupa2-turistickaagencija\Projekat\FarAway\FarAway\bin\x86\Debug\not now but soon\PretragaHoteli.xbf
+C:\Users\hp\Documents\GitHub\Grupa2-turistickaagencija\Projekat\FarAway\FarAway\bin\x86\Debug\not now but soon\PretragaTipUsluge.xbf
+C:\Users\hp\Documents\GitHub\Grupa2-turistickaagencija\Projekat\FarAway\FarAway\bin\x86\Debug\not now but soon\Recenzije.xbf
+C:\Users\hp\Documents\GitHub\Grupa2-turistickaagencija\Projekat\FarAway\FarAway\bin\x86\Debug\not now but soon\Rezervacija.xbf
 C:\Users\hp\Documents\GitHub\Grupa2-turistickaagencija\Projekat\FarAway\FarAway\bin\x86\Debug\FarAway.xr.xml
 C:\Users\hp\Documents\GitHub\Grupa2-turistickaagencija\Projekat\FarAway\FarAway\bin\x86\Debug\FarAway.exe
 C:\Users\hp\Documents\GitHub\Grupa2-turistickaagencija\Projekat\FarAway\FarAway\bin\x86\Debug\FarAway.pdb
@@ -19,6 +54,7 @@ C:\Users\hp\Documents\GitHub\Grupa2-turistickaagencija\Projekat\FarAway\FarAway\
 C:\Users\hp\Documents\GitHub\Grupa2-turistickaagencija\Projekat\FarAway\FarAway\bin\x86\Debug\Core\AppxManifest.xml
 C:\Users\hp\Documents\GitHub\Grupa2-turistickaagencija\Projekat\FarAway\FarAway\bin\x86\Debug\Core\FarAway.exe
 C:\Users\hp\Documents\GitHub\Grupa2-turistickaagencija\Projekat\FarAway\FarAway\bin\x86\Debug\FarAway.build.appxrecipe
+C:\Users\hp\Documents\GitHub\Grupa2-turistickaagencija\Projekat\FarAway\FarAway\bin\x86\Debug\Microsoft.Azure.Mobile.Client.dll
 C:\Users\hp\Documents\GitHub\Grupa2-turistickaagencija\Projekat\FarAway\FarAway\bin\x86\Debug\Microsoft.CSharp.dll
 C:\Users\hp\Documents\GitHub\Grupa2-turistickaagencija\Projekat\FarAway\FarAway\bin\x86\Debug\System.ComponentModel.DataAnnotations.dll
 C:\Users\hp\Documents\GitHub\Grupa2-turistickaagencija\Projekat\FarAway\FarAway\bin\x86\Debug\System.Core.dll
@@ -33,6 +69,7 @@ C:\Users\hp\Documents\GitHub\Grupa2-turistickaagencija\Projekat\FarAway\FarAway\
 C:\Users\hp\Documents\GitHub\Grupa2-turistickaagencija\Projekat\FarAway\FarAway\bin\x86\Debug\System.Xml.dll
 C:\Users\hp\Documents\GitHub\Grupa2-turistickaagencija\Projekat\FarAway\FarAway\bin\x86\Debug\System.dll
 C:\Users\hp\Documents\GitHub\Grupa2-turistickaagencija\Projekat\FarAway\FarAway\bin\x86\Debug\Microsoft.VisualBasic.dll
+C:\Users\hp\Documents\GitHub\Grupa2-turistickaagencija\Projekat\FarAway\FarAway\bin\x86\Debug\Newtonsoft.Json.dll
 C:\Users\hp\Documents\GitHub\Grupa2-turistickaagencija\Projekat\FarAway\FarAway\bin\x86\Debug\System.Collections.dll
 C:\Users\hp\Documents\GitHub\Grupa2-turistickaagencija\Projekat\FarAway\FarAway\bin\x86\Debug\System.Diagnostics.Tools.dll
 C:\Users\hp\Documents\GitHub\Grupa2-turistickaagencija\Projekat\FarAway\FarAway\bin\x86\Debug\System.Diagnostics.Tracing.dll
@@ -133,60 +170,6 @@ C:\Users\hp\Documents\GitHub\Grupa2-turistickaagencija\Projekat\FarAway\FarAway\
 C:\Users\hp\Documents\GitHub\Grupa2-turistickaagencija\Projekat\FarAway\FarAway\bin\x86\Debug\System.Xml.XDocument.dll
 C:\Users\hp\Documents\GitHub\Grupa2-turistickaagencija\Projekat\FarAway\FarAway\bin\x86\Debug\System.Xml.XmlDocument.dll
 C:\Users\hp\Documents\GitHub\Grupa2-turistickaagencija\Projekat\FarAway\FarAway\bin\x86\Debug\System.Xml.XmlSerializer.dll
-C:\Users\hp\Documents\GitHub\Grupa2-turistickaagencija\Projekat\FarAway\FarAway\obj\x86\Debug\App.g.i.cs
-C:\Users\hp\Documents\GitHub\Grupa2-turistickaagencija\Projekat\FarAway\FarAway\obj\x86\Debug\App.g.cs
-C:\Users\hp\Documents\GitHub\Grupa2-turistickaagencija\Projekat\FarAway\FarAway\obj\x86\Debug\MainPage.g.i.cs
-C:\Users\hp\Documents\GitHub\Grupa2-turistickaagencija\Projekat\FarAway\FarAway\obj\x86\Debug\MainPage.g.cs
-C:\Users\hp\Documents\GitHub\Grupa2-turistickaagencija\Projekat\FarAway\FarAway\obj\x86\Debug\Placanje.g.i.cs
-C:\Users\hp\Documents\GitHub\Grupa2-turistickaagencija\Projekat\FarAway\FarAway\obj\x86\Debug\Placanje.g.cs
-C:\Users\hp\Documents\GitHub\Grupa2-turistickaagencija\Projekat\FarAway\FarAway\obj\x86\Debug\PlacanjeKarticom.g.i.cs
-C:\Users\hp\Documents\GitHub\Grupa2-turistickaagencija\Projekat\FarAway\FarAway\obj\x86\Debug\PlacanjeKarticom.g.cs
-C:\Users\hp\Documents\GitHub\Grupa2-turistickaagencija\Projekat\FarAway\FarAway\obj\x86\Debug\Pretraga.g.i.cs
-C:\Users\hp\Documents\GitHub\Grupa2-turistickaagencija\Projekat\FarAway\FarAway\obj\x86\Debug\Pretraga.g.cs
-C:\Users\hp\Documents\GitHub\Grupa2-turistickaagencija\Projekat\FarAway\FarAway\obj\x86\Debug\PretragaDestinacija.g.i.cs
-C:\Users\hp\Documents\GitHub\Grupa2-turistickaagencija\Projekat\FarAway\FarAway\obj\x86\Debug\PretragaDestinacija.g.cs
-C:\Users\hp\Documents\GitHub\Grupa2-turistickaagencija\Projekat\FarAway\FarAway\obj\x86\Debug\PretragaHoteli.g.i.cs
-C:\Users\hp\Documents\GitHub\Grupa2-turistickaagencija\Projekat\FarAway\FarAway\obj\x86\Debug\PretragaHoteli.g.cs
-C:\Users\hp\Documents\GitHub\Grupa2-turistickaagencija\Projekat\FarAway\FarAway\obj\x86\Debug\PretragaTipUsluge.g.i.cs
-C:\Users\hp\Documents\GitHub\Grupa2-turistickaagencija\Projekat\FarAway\FarAway\obj\x86\Debug\PretragaTipUsluge.g.cs
-C:\Users\hp\Documents\GitHub\Grupa2-turistickaagencija\Projekat\FarAway\FarAway\obj\x86\Debug\Prijava.g.i.cs
-C:\Users\hp\Documents\GitHub\Grupa2-turistickaagencija\Projekat\FarAway\FarAway\obj\x86\Debug\Prijava.g.cs
-C:\Users\hp\Documents\GitHub\Grupa2-turistickaagencija\Projekat\FarAway\FarAway\obj\x86\Debug\Recenzije.g.i.cs
-C:\Users\hp\Documents\GitHub\Grupa2-turistickaagencija\Projekat\FarAway\FarAway\obj\x86\Debug\Recenzije.g.cs
-C:\Users\hp\Documents\GitHub\Grupa2-turistickaagencija\Projekat\FarAway\FarAway\obj\x86\Debug\Registracija.g.i.cs
-C:\Users\hp\Documents\GitHub\Grupa2-turistickaagencija\Projekat\FarAway\FarAway\obj\x86\Debug\Registracija.g.cs
-C:\Users\hp\Documents\GitHub\Grupa2-turistickaagencija\Projekat\FarAway\FarAway\obj\x86\Debug\Rezervacija.g.i.cs
-C:\Users\hp\Documents\GitHub\Grupa2-turistickaagencija\Projekat\FarAway\FarAway\obj\x86\Debug\Rezervacija.g.cs
-C:\Users\hp\Documents\GitHub\Grupa2-turistickaagencija\Projekat\FarAway\FarAway\obj\x86\Debug\StranicaKorisnika.g.i.cs
-C:\Users\hp\Documents\GitHub\Grupa2-turistickaagencija\Projekat\FarAway\FarAway\obj\x86\Debug\StranicaKorisnika.g.cs
-C:\Users\hp\Documents\GitHub\Grupa2-turistickaagencija\Projekat\FarAway\FarAway\obj\x86\Debug\XamlTypeInfo.g.cs
-C:\Users\hp\Documents\GitHub\Grupa2-turistickaagencija\Projekat\FarAway\FarAway\obj\x86\Debug\App.xaml
-C:\Users\hp\Documents\GitHub\Grupa2-turistickaagencija\Projekat\FarAway\FarAway\obj\x86\Debug\MainPage.xaml
-C:\Users\hp\Documents\GitHub\Grupa2-turistickaagencija\Projekat\FarAway\FarAway\obj\x86\Debug\Placanje.xaml
-C:\Users\hp\Documents\GitHub\Grupa2-turistickaagencija\Projekat\FarAway\FarAway\obj\x86\Debug\PlacanjeKarticom.xaml
-C:\Users\hp\Documents\GitHub\Grupa2-turistickaagencija\Projekat\FarAway\FarAway\obj\x86\Debug\Pretraga.xaml
-C:\Users\hp\Documents\GitHub\Grupa2-turistickaagencija\Projekat\FarAway\FarAway\obj\x86\Debug\PretragaDestinacija.xaml
-C:\Users\hp\Documents\GitHub\Grupa2-turistickaagencija\Projekat\FarAway\FarAway\obj\x86\Debug\PretragaHoteli.xaml
-C:\Users\hp\Documents\GitHub\Grupa2-turistickaagencija\Projekat\FarAway\FarAway\obj\x86\Debug\PretragaTipUsluge.xaml
-C:\Users\hp\Documents\GitHub\Grupa2-turistickaagencija\Projekat\FarAway\FarAway\obj\x86\Debug\Prijava.xaml
-C:\Users\hp\Documents\GitHub\Grupa2-turistickaagencija\Projekat\FarAway\FarAway\obj\x86\Debug\Recenzije.xaml
-C:\Users\hp\Documents\GitHub\Grupa2-turistickaagencija\Projekat\FarAway\FarAway\obj\x86\Debug\Registracija.xaml
-C:\Users\hp\Documents\GitHub\Grupa2-turistickaagencija\Projekat\FarAway\FarAway\obj\x86\Debug\Rezervacija.xaml
-C:\Users\hp\Documents\GitHub\Grupa2-turistickaagencija\Projekat\FarAway\FarAway\obj\x86\Debug\StranicaKorisnika.xaml
-C:\Users\hp\Documents\GitHub\Grupa2-turistickaagencija\Projekat\FarAway\FarAway\obj\x86\Debug\App.xbf
-C:\Users\hp\Documents\GitHub\Grupa2-turistickaagencija\Projekat\FarAway\FarAway\obj\x86\Debug\MainPage.xbf
-C:\Users\hp\Documents\GitHub\Grupa2-turistickaagencija\Projekat\FarAway\FarAway\obj\x86\Debug\Placanje.xbf
-C:\Users\hp\Documents\GitHub\Grupa2-turistickaagencija\Projekat\FarAway\FarAway\obj\x86\Debug\PlacanjeKarticom.xbf
-C:\Users\hp\Documents\GitHub\Grupa2-turistickaagencija\Projekat\FarAway\FarAway\obj\x86\Debug\Pretraga.xbf
-C:\Users\hp\Documents\GitHub\Grupa2-turistickaagencija\Projekat\FarAway\FarAway\obj\x86\Debug\PretragaDestinacija.xbf
-C:\Users\hp\Documents\GitHub\Grupa2-turistickaagencija\Projekat\FarAway\FarAway\obj\x86\Debug\PretragaHoteli.xbf
-C:\Users\hp\Documents\GitHub\Grupa2-turistickaagencija\Projekat\FarAway\FarAway\obj\x86\Debug\PretragaTipUsluge.xbf
-C:\Users\hp\Documents\GitHub\Grupa2-turistickaagencija\Projekat\FarAway\FarAway\obj\x86\Debug\Prijava.xbf
-C:\Users\hp\Documents\GitHub\Grupa2-turistickaagencija\Projekat\FarAway\FarAway\obj\x86\Debug\Recenzije.xbf
-C:\Users\hp\Documents\GitHub\Grupa2-turistickaagencija\Projekat\FarAway\FarAway\obj\x86\Debug\Registracija.xbf
-C:\Users\hp\Documents\GitHub\Grupa2-turistickaagencija\Projekat\FarAway\FarAway\obj\x86\Debug\Rezervacija.xbf
-C:\Users\hp\Documents\GitHub\Grupa2-turistickaagencija\Projekat\FarAway\FarAway\obj\x86\Debug\StranicaKorisnika.xbf
-C:\Users\hp\Documents\GitHub\Grupa2-turistickaagencija\Projekat\FarAway\FarAway\obj\x86\Debug\XamlSaveStateFile.xml
 C:\Users\hp\Documents\GitHub\Grupa2-turistickaagencija\Projekat\FarAway\FarAway\obj\x86\Debug\FarAway.csproj.CoreCompileInputs.cache
 C:\Users\hp\Documents\GitHub\Grupa2-turistickaagencija\Projekat\FarAway\FarAway\obj\x86\Debug\FarAway.csproj.CopyComplete
 C:\Users\hp\Documents\GitHub\Grupa2-turistickaagencija\Projekat\FarAway\FarAway\obj\x86\Debug\FarAway.exe
@@ -254,6 +237,8 @@ C:\Users\hp\Documents\GitHub\Grupa2-turistickaagencija\Projekat\FarAway\FarAway\
 C:\Users\hp\Documents\GitHub\Grupa2-turistickaagencija\Projekat\FarAway\FarAway\obj\x86\Debug\FxResources.System.Xml.XDocument.SR.resw
 C:\Users\hp\Documents\GitHub\Grupa2-turistickaagencija\Projekat\FarAway\FarAway\obj\x86\Debug\FxResources.System.Xml.XmlDocument.SR.resw
 C:\Users\hp\Documents\GitHub\Grupa2-turistickaagencija\Projekat\FarAway\FarAway\obj\x86\Debug\FxResources.System.Xml.XmlSerializer.SR.resw
+C:\Users\hp\Documents\GitHub\Grupa2-turistickaagencija\Projekat\FarAway\FarAway\obj\x86\Debug\Microsoft.Azure.Mobile.Client\en-US\Microsoft.WindowsAzure.MobileServices.Resources.resw
+C:\Users\hp\Documents\GitHub\Grupa2-turistickaagencija\Projekat\FarAway\FarAway\obj\x86\Debug\FarAway.csproj.GenerateResource.Cache
 C:\Users\hp\Documents\GitHub\Grupa2-turistickaagencija\Projekat\FarAway\FarAway\obj\x86\Debug\priconfig.xml
 C:\Users\hp\Documents\GitHub\Grupa2-turistickaagencija\Projekat\FarAway\FarAway\obj\x86\Debug\priconfig.xml.intermediate
 C:\Users\hp\Documents\GitHub\Grupa2-turistickaagencija\Projekat\FarAway\FarAway\obj\x86\Debug\layout.resfiles
@@ -265,5 +250,25 @@ C:\Users\hp\Documents\GitHub\Grupa2-turistickaagencija\Projekat\FarAway\FarAway\
 C:\Users\hp\Documents\GitHub\Grupa2-turistickaagencija\Projekat\FarAway\FarAway\obj\x86\Debug\qualifiers.txt
 C:\Users\hp\Documents\GitHub\Grupa2-turistickaagencija\Projekat\FarAway\FarAway\obj\x86\Debug\qualifiers.txt.intermediate
 C:\Users\hp\Documents\GitHub\Grupa2-turistickaagencija\Projekat\FarAway\FarAway\obj\x86\Debug\MultipleQualifiersPerDimensionFound.txt
+C:\Users\hp\Documents\GitHub\Grupa2-turistickaagencija\Projekat\FarAway\FarAway\obj\x86\Debug\Microsoft.Azure.Mobile.Client.pri.xml
 C:\Users\hp\Documents\GitHub\Grupa2-turistickaagencija\Projekat\FarAway\FarAway\obj\x86\Debug\ProjectArchitectures.txt
-C:\Users\hp\Documents\GitHub\Grupa2-turistickaagencija\Projekat\FarAway\FarAway\obj\x86\Debug\FarAway.csprojResolveAssemblyReference.cache
+C:\Users\hp\Documents\GitHub\Grupa2-turistickaagencija\Projekat\FarAway\FarAway\obj\x86\Debug\View\MainPage.g.i.cs
+C:\Users\hp\Documents\GitHub\Grupa2-turistickaagencija\Projekat\FarAway\FarAway\obj\x86\Debug\View\MainPage.g.cs
+C:\Users\hp\Documents\GitHub\Grupa2-turistickaagencija\Projekat\FarAway\FarAway\obj\x86\Debug\View\Prijava.g.i.cs
+C:\Users\hp\Documents\GitHub\Grupa2-turistickaagencija\Projekat\FarAway\FarAway\obj\x86\Debug\View\Prijava.g.cs
+C:\Users\hp\Documents\GitHub\Grupa2-turistickaagencija\Projekat\FarAway\FarAway\obj\x86\Debug\View\Registracija.g.i.cs
+C:\Users\hp\Documents\GitHub\Grupa2-turistickaagencija\Projekat\FarAway\FarAway\obj\x86\Debug\View\Registracija.g.cs
+C:\Users\hp\Documents\GitHub\Grupa2-turistickaagencija\Projekat\FarAway\FarAway\obj\x86\Debug\View\StranicaKorisnika.g.i.cs
+C:\Users\hp\Documents\GitHub\Grupa2-turistickaagencija\Projekat\FarAway\FarAway\obj\x86\Debug\View\StranicaKorisnika.g.cs
+C:\Users\hp\Documents\GitHub\Grupa2-turistickaagencija\Projekat\FarAway\FarAway\obj\x86\Debug\View\MainPage.xaml
+C:\Users\hp\Documents\GitHub\Grupa2-turistickaagencija\Projekat\FarAway\FarAway\obj\x86\Debug\View\Prijava.xaml
+C:\Users\hp\Documents\GitHub\Grupa2-turistickaagencija\Projekat\FarAway\FarAway\obj\x86\Debug\View\Registracija.xaml
+C:\Users\hp\Documents\GitHub\Grupa2-turistickaagencija\Projekat\FarAway\FarAway\obj\x86\Debug\View\StranicaKorisnika.xaml
+C:\Users\hp\Documents\GitHub\Grupa2-turistickaagencija\Projekat\FarAway\FarAway\obj\x86\Debug\View\MainPage.xbf
+C:\Users\hp\Documents\GitHub\Grupa2-turistickaagencija\Projekat\FarAway\FarAway\obj\x86\Debug\View\Prijava.xbf
+C:\Users\hp\Documents\GitHub\Grupa2-turistickaagencija\Projekat\FarAway\FarAway\obj\x86\Debug\View\Registracija.xbf
+C:\Users\hp\Documents\GitHub\Grupa2-turistickaagencija\Projekat\FarAway\FarAway\obj\x86\Debug\View\StranicaKorisnika.xbf
+C:\Users\hp\Documents\GitHub\Grupa2-turistickaagencija\Projekat\FarAway\FarAway\bin\x86\Debug\View\MainPage.xbf
+C:\Users\hp\Documents\GitHub\Grupa2-turistickaagencija\Projekat\FarAway\FarAway\bin\x86\Debug\View\Prijava.xbf
+C:\Users\hp\Documents\GitHub\Grupa2-turistickaagencija\Projekat\FarAway\FarAway\bin\x86\Debug\View\Registracija.xbf
+C:\Users\hp\Documents\GitHub\Grupa2-turistickaagencija\Projekat\FarAway\FarAway\bin\x86\Debug\View\StranicaKorisnika.xbf

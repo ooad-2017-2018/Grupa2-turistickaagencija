@@ -1,0 +1,114 @@
+﻿<Page
+    x:Class="FarAway.PlacanjeKarticom"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:FarAway"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+
+        </Grid.ColumnDefinitions>
+
+        <StackPanel Grid.ColumnSpan="3">
+            <Image HorizontalAlignment="Left" Height="270" Margin="10,0,0,0" Source="Assets/ooad slike/sea side.png" Stretch="Fill"/>
+        </StackPanel>
+
+        <StackPanel x:ConnectionId='1' x:Name="maestro" Grid.Row="1" >
+            <TextBlock HorizontalAlignment="Left" Height="43" Margin="0,0,0,0" Grid.Row="1" Text="Prihvatamo sljedece kartice" TextWrapping="Wrap" VerticalAlignment="Top" Width="311"/>
+            <Image HorizontalAlignment="Left" Height="150" Margin="61,0,0,0" Width="272" Source="Assets/ooad slike/maestrocard.png" Stretch="Fill"/>
+        </StackPanel>
+
+        <StackPanel x:ConnectionId='2' x:Name="visa" Grid.Row="1" Grid.Column="1">
+            <Image HorizontalAlignment="Left" Height="149" Margin="61,43,0,0" Width="290" Source="Assets/ooad slike/visa.jpg" Stretch="Fill"/>
+        </StackPanel>
+
+        <StackPanel x:ConnectionId='3' x:Name="master" Grid.Row="1" Grid.Column="2">
+            <Image x:ConnectionId='6' x:Name="mastercard" HorizontalAlignment="Left" Height="125" Margin="61,43,0,0" Width="281" Source="Assets/ooad slike/MasterCard.png" Stretch="Fill"/>
+
+        </StackPanel>
+
+        <StackPanel x:ConnectionId='4' x:Name="unos" Grid.Row="2" Grid.Column="1">
+            <TextBlock HorizontalAlignment="Left" Height="37" Margin="0,0,0,0" Text="Ime vlasnika kartice" TextWrapping="Wrap" Width="112"/>
+            <TextBox HorizontalAlignment="Left" Height="40" Margin="105,-37,0,0" Text="TextBox" Width="200"/>
+            <TextBlock HorizontalAlignment="Left" Height="37" Margin="00,10,0,0" Text="Broj kreditne kartice" TextWrapping="Wrap" Width="97"/>
+            <TextBox HorizontalAlignment="Left" Height="40" Margin="105,-37,0,0" Text="TextBox" TextWrapping="Wrap" Width="200"/>
+            <TextBlock HorizontalAlignment="Left" Height="37" Margin="0,10,0,0" Text="Sigurnosni Kod" TextWrapping="Wrap" Width="71"/>
+            <TextBox HorizontalAlignment="Left" Height="40" Margin="105,-37,0,0" Text="TextBox" Width="200"/>
+            <Button Content="Button" HorizontalAlignment="Left" Height="46" Margin="105,40,0,0" Width="200"/>
+
+        </StackPanel>
+        
+        <TextBlock x:ConnectionId='5' x:Name="poruka" Grid.Column="2" HorizontalAlignment="Center" Height="161" Margin="10,36,0,0" Grid.Row="2" Text="Jos samo jedan korak do putovanja iz snova" TextAlignment="Center" VerticalAlignment="Center" TextWrapping="Wrap" Padding="50" Width="356" Foreground="DeepSkyBlue"/>
+
+        <VisualStateManager.VisualStateGroups>
+            <VisualStateGroup x:ConnectionId='7' x:Name="VisualStateGroup">
+                <VisualState x:ConnectionId='8' x:Name="Wide">
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="800"/>
+                    </VisualState.StateTriggers>
+                    <VisualState.Setters>
+                        
+
+                    </VisualState.Setters>
+                </VisualState>
+
+                <VisualState x:ConnectionId='9' x:Name="Narrow">
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="0"/>
+                    </VisualState.StateTriggers>
+                    <VisualState.Setters>
+
+                       <Setter Target="maestro.(Grid.Row)" Value="1"/>
+                        <Setter Target="maestro.(Grid.Column)" Value="1"/>
+                        <Setter Target="maestro.(Grid.RowSpan)" Value="2"/>
+                        <Setter Target="maestro.(Grid.ColumnSpan)" Value="2"/>
+
+
+                        <Setter Target="visa.(Grid.Row)" Value="2"/>
+                        <Setter Target="visa.(Grid.Column)" Value="1"/>
+                        <Setter Target="visa.Margin" Value="0,30,0,0"/>
+                        <Setter Target="visa.(Grid.RowSpan)" Value="2"/>
+                        <Setter Target="visa.(Grid.ColumnSpan)" Value="2"/>
+                        
+
+                        <Setter Target="master.(Grid.Row)" Value="1"/>                        
+                        <Setter Target="master.(Grid.Column)" Value="1"/>
+                        <Setter Target="master.Margin" Value="0,150,0,0"/>
+                        <Setter Target="master.(Grid.RowSpan)" Value="2"/>
+                        <Setter Target="master.(Grid.ColumnSpan)" Value="2"/>
+                        
+
+
+                        <Setter Target="unos.(Grid.Row)" Value="1"/>
+                        <Setter Target="unos.(Grid.Column)" Value="0"/>
+                        <Setter Target="unos.(Grid.RowSpan)" Value="3"/>
+                        <Setter Target="unos.(Grid.ColumnSpan)" Value="3"/>
+
+                        <Setter Target="poruka.Visibility" Value="collapsed"/>
+
+
+
+
+
+
+                    </VisualState.Setters>
+                </VisualState>
+            </VisualStateGroup>
+        </VisualStateManager.VisualStateGroups>
+
+    </Grid>
+</Page>
+
