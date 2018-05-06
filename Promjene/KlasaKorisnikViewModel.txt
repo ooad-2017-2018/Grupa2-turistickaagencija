@@ -1,0 +1,61 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp6
+{
+	class KorisnikViewModel
+	{
+		private string username;
+		private string password;
+		private string email;
+		Korisnik korisnik = new Korisnik();
+		StaticVariablesClass temp = new StaticVariablesClass();
+		public KorisnikViewModel(string username, string password, string email)
+		{
+			this.username = username;
+			this.password = password;
+			this.email = email;
+		}
+		public async void VerifikacijaPassworda()
+		{
+			if (password.Any(c => char.IsDigit(c)) == false)
+			{
+				var dialog = new MessageDialog("Password mora sadrzati bar jedan broj!");
+				await dialog.ShowAsync();
+			}
+
+			else if (password.Length < 5)
+			{
+				var dialog = new MessageDialog("Password mora imati vise od 5 znakova!");
+
+				await dialog.ShowAsync();
+			}
+
+		}
+		public bool VerifikacijaEmaila()
+		{
+			try
+			{
+				var addr = new System.Net.Mail.MailAddress(email);
+				return addr.Address == email;
+			}
+			catch
+			{
+				return false;
+			}
+		}
+
+		public void dodijelikorisnika()
+		{
+			temp.userID = korisnik.userID;
+			temp.username = korisnik.username;
+			temp.profilePic = korisnik.profilePic;
+			temp.collections = korisnik.collections;
+			temp.email = korisnik.email;
+		}
+
+	}
+}
