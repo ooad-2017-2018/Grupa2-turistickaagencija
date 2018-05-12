@@ -36,5 +36,19 @@ namespace FarAway
         {
 
         }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            //treba izvsiti validaciju username i password, ako nema ga u bazi preci na
+            //stranicu za registraciju, u suprotnom preci na StranicuKorisnika.
+            //drugi parametar je username koji cemo koristiti na StraniciKorisnika
+            //tj. tako znamo o kojem se korisniku radi
+            // trebaju biti odvojene validacije za username i pass
+            //ubaciti da moze i pogrijesiti ne mora znaciti odmah da ga nema mozda je fulio slovo
+            this.Frame.Navigate(typeof(StranicaKorisnika),yas.Text); 
+            
+        }
+
+  
     }
 }

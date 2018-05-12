@@ -40,9 +40,11 @@ namespace FarAway
         private void btnRegistracija_Click(object sender, RoutedEventArgs e)
         {
             IMobileServiceTable<Korisnik> userTableObj = App.MobileService.GetTable<Korisnik>();
+            //dodati provjeru da se oba passworda slazu
             try
             {
                 Korisnik obj = new Korisnik();
+                obj.Id = username.Text;
                 obj.Ime = ime.Text;
                 obj.Prezime = prezime.Text;
                 obj.DatumRodjenja = Convert.ToString(dRodjenja);

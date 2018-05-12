@@ -39,8 +39,10 @@
                 </PivotItem>
             <PivotItem Header="Korisnicki racun">
                     <StackPanel>
+                       
+                       <!-- <local:UsernamePretraga x:Name="username" HorizontalAlignment="Left" Height="30" Margin="10,0,0,0"  Width="430"/>-->
                         <TextBlock HorizontalAlignment="Left" Height="33" Margin="10,0,0,0" Text="Username" TextWrapping="Wrap" Width="192"/>
-                        <TextBlock x:ConnectionId='2' x:Name="username" HorizontalAlignment="Left" Height="33" Margin="200,-33,0,0" Text="sborovac" TextWrapping="Wrap" Width="192"/>
+                        <TextBlock x:ConnectionId='2' x:Name="username" HorizontalAlignment="Left" Height="33" Margin="200,-33,0,0" TextWrapping="Wrap" Width="192"/>
                         <TextBlock HorizontalAlignment="Left" Height="33" Margin="10,0,0,0" Text="Password" TextWrapping="Wrap" Width="192"/>
                         <TextBlock x:ConnectionId='3' x:Name="password" HorizontalAlignment="Left" Height="33" Margin="200,-33,0,0" Text="selmaborovac" TextWrapping="Wrap" Width="192"/>
                         <TextBlock HorizontalAlignment="Left" Height="33" Margin="10,0,0,0" Text="E-mail" TextWrapping="Wrap" Width="192"/>

@@ -8,7 +8,7 @@ namespace FarAway
 {
     public class Korisnik
     {
-        private int id;
+        private string id;
         private string ime;
         private string prezime;
         private double brojputovanja;
@@ -37,6 +37,6 @@ namespace FarAway
         public string Password { get => password; set => password = value; }
         public string Email { get => email; set => email = value; }
         public string DatumRodjenja { get => datumRodjenja; set => datumRodjenja = value; }
-        public int Id { get => id; set => id = value; }
+        public string Id { get => id; set => id = value; }
     }
 }

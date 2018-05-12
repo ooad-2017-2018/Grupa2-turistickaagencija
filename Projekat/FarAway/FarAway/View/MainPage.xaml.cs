@@ -33,7 +33,7 @@ namespace FarAway
        
         private void bPrijava_Click(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(StranicaKorisnika));
+            this.Frame.Navigate(typeof(Prijava));
         }
 
         private void bRegistracija_Click(object sender, RoutedEventArgs e)
