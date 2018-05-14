@@ -37,23 +37,40 @@ namespace FarAway
             this.Frame.Navigate(typeof(MainPage));
         }
 
-        private void btnRegistracija_Click(object sender, RoutedEventArgs e)
+        private async void btnRegistracija_Click(object sender, RoutedEventArgs e)
         {
             IMobileServiceTable<Korisnik> userTableObj = App.MobileService.GetTable<Korisnik>();
             //dodati provjeru da se oba passworda slazu
             try
             {
-                Korisnik obj = new Korisnik();
-                obj.Id = username.Text;
-                obj.Ime = ime.Text;
-                obj.Prezime = prezime.Text;
-                obj.DatumRodjenja = Convert.ToString(dRodjenja);
-                obj.Email = email.Text;
-                obj.Username = username.Text;
-                obj.Password = Convert.ToString(password);
-                userTableObj.InsertAsync(obj);
-                MessageDialog msgDialog = new MessageDialog("Uspješno ste unijeli novog korisnika.");
-                msgDialog.ShowAsync();
+                Korisnik kor = (await userTableObj.ToListAsync()).Find(x => x.Username == username.Text);
+                if (kor == null)
+                {
+                    if(password.Password!=password2.Password)
+                    {
+                        password.Password = "";
+                        password2.Password = "";
+                        throw new Exception("Password nije isti! sorry fish");
+                        
+                    }
+                    Korisnik obj = new Korisnik();
+                    obj.Id = username.Text;
+                    obj.Ime = ime.Text;
+                    obj.Prezime = prezime.Text;
+                    obj.DatumRodjenja = Convert.ToString(dRodjenja.Date);
+                    obj.Email = email.Text;
+                    obj.Username = username.Text;
+                    obj.Password = password.Password;
+                    userTableObj.InsertAsync(obj);
+                    MessageDialog msgDialog = new MessageDialog("Uspješno ste unijeli novog korisnika.");
+                    msgDialog.ShowAsync();
+                }
+                else
+                {
+                    MessageDialog msgDialog = new MessageDialog("Korisnik vec postoji");
+                    msgDialog.ShowAsync();
+                    this.Frame.Navigate(typeof(Prijava));
+                }
             }
             catch (Exception ex)
             {

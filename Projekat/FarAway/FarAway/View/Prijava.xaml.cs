@@ -12,7 +12,8 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
-
+using Microsoft.WindowsAzure.MobileServices;
+using Windows.UI.Popups;
 // The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=234238
 
 namespace FarAway
@@ -37,18 +38,54 @@ namespace FarAway
 
         }
 
-        private void Button_Click_1(object sender, RoutedEventArgs e)
+        private async void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            //treba izvsiti validaciju username i password, ako nema ga u bazi preci na
-            //stranicu za registraciju, u suprotnom preci na StranicuKorisnika.
-            //drugi parametar je username koji cemo koristiti na StraniciKorisnika
-            //tj. tako znamo o kojem se korisniku radi
-            // trebaju biti odvojene validacije za username i pass
-            //ubaciti da moze i pogrijesiti ne mora znaciti odmah da ga nema mozda je fulio slovo
-            this.Frame.Navigate(typeof(StranicaKorisnika),yas.Text); 
-            
-        }
+            if (yas.Text.Length == 0 || password.Text.Length == 0)
+            {
+                password.Text = "Molim unesite sva polja!";
+            }
+            else if (yas.Text.Length != 0 || (password.Text).Length != 0)
+            {
+                IMobileServiceTable<Korisnik> rKorisnik = App.MobileService.GetTable<Korisnik>();
 
-  
+                try
+                {
+                    Korisnik kor = (await rKorisnik.ToListAsync()).Find(x => x.Username == yas.Text); //koristimo da pretrazujemo korisnika
+                    if (kor == null)
+                    {
+                        MessageDialog msgbox = new MessageDialog("Nemate racun, da li želite kreirati racun?");
+
+                        msgbox.Commands.Clear();
+                        msgbox.Commands.Add(new UICommand { Label = "Da", Id = 0 });
+                        msgbox.Commands.Add(new UICommand { Label = "Ne", Id = 1 });
+
+
+                        var res = await msgbox.ShowAsync();
+
+                        if ((int)res.Id == 0)
+                        {
+                            Frame.Navigate(typeof(Registracija));
+                        }
+
+                        if ((int)res.Id == 1)
+                        {
+                            Frame.Navigate(typeof(MainPage));
+                        }
+
+                    }
+                    else
+                    {
+                        this.Frame.Navigate(typeof(StranicaKorisnika), yas.Text);
+                    }
+                }
+                catch (Exception ex)
+                {
+
+                    MessageDialog msgDialogError = new MessageDialog("Error : " + ex.ToString());
+                    await msgDialogError.ShowAsync();
+
+                }
+            }
+        }
     }
 }

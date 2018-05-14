@@ -30,35 +30,42 @@
           <Pivot HorizontalAlignment="Left" Height="460" Margin="0,20,-1260,-480" Grid.Row="1" VerticalAlignment="Top" Width="1260" Grid.RowSpan="2">
             <PivotItem Header="Vasa Putovanja">
                     <StackPanel>
-                    <FlipView x:ConnectionId='6' x:Name="slike" Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="266" Margin="20,20,0,0" Grid.RowSpan="2" Grid.Row="1" VerticalAlignment="Top" Width="509">
+                    <FlipView x:ConnectionId='10' x:Name="slike" Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="266" Margin="20,20,0,0" Grid.RowSpan="2" Grid.Row="1" VerticalAlignment="Top" Width="509">
                             <Image Source="ms-appx:///Assets/ooad slike/zagreb.jpg" Stretch="Fill"/>
                             <Image Source="ms-appx:///Assets/ooad slike/exit.png" Stretch="Fill"/>
                     </FlipView>
-                    <TextBox x:ConnectionId='7' x:Name="pInfo" Grid.ColumnSpan="2" Grid.Column="1" HorizontalAlignment="Left" Height="244" Margin="600,-250,0,0" Grid.RowSpan="2" Grid.Row="1" Text="info o putovanju" VerticalAlignment="Top" Width="427"/>
+                    <TextBox x:ConnectionId='11' x:Name="pInfo" Grid.ColumnSpan="2" Grid.Column="1" HorizontalAlignment="Left" Height="244" Margin="600,-250,0,0" Grid.RowSpan="2" Grid.Row="1" Text="info o putovanju" VerticalAlignment="Top" Width="427"/>
                     </StackPanel>
                 </PivotItem>
             <PivotItem Header="Korisnicki racun">
-                    <StackPanel>
-                       
+                    <StackPanel>                       
                        <!-- <local:UsernamePretraga x:Name="username" HorizontalAlignment="Left" Height="30" Margin="10,0,0,0"  Width="430"/>-->
                         <TextBlock HorizontalAlignment="Left" Height="33" Margin="10,0,0,0" Text="Username" TextWrapping="Wrap" Width="192"/>
                         <TextBlock x:ConnectionId='2' x:Name="username" HorizontalAlignment="Left" Height="33" Margin="200,-33,0,0" TextWrapping="Wrap" Width="192"/>
+                        <TextBox x:ConnectionId='3' x:Name="newUsername" HorizontalAlignment="Left" Height="33" Margin="200,-33,0,0" TextWrapping="Wrap" Width="192" Visibility="Collapsed"/>
                         <TextBlock HorizontalAlignment="Left" Height="33" Margin="10,0,0,0" Text="Password" TextWrapping="Wrap" Width="192"/>
-                        <TextBlock x:ConnectionId='3' x:Name="password" HorizontalAlignment="Left" Height="33" Margin="200,-33,0,0" Text="selmaborovac" TextWrapping="Wrap" Width="192"/>
+                        <TextBlock x:ConnectionId='4' x:Name="password" HorizontalAlignment="Left" Height="33" Margin="200,-33,0,0" Text="" TextWrapping="Wrap" Width="192"/>
+                        <TextBox x:ConnectionId='5' x:Name="newPassword" HorizontalAlignment="Left" Height="33" Margin="200,-33,0,0" TextWrapping="Wrap" Width="192" Visibility="Collapsed"/>
                         <TextBlock HorizontalAlignment="Left" Height="33" Margin="10,0,0,0" Text="E-mail" TextWrapping="Wrap" Width="192"/>
-                        <TextBlock x:ConnectionId='4' x:Name="email" HorizontalAlignment="Left" Height="33" Margin="200,-33,0,0" Text="sborovac@gmail.com" TextWrapping="Wrap" Width="192"/>
-                        <Button Content="Izmijeni Podatke" Height="33" Margin="200,0,0,0" Width="192"/>
-                        <Button x:ConnectionId='5' Content="Obrisi Profil" Height="33" Margin="200,0,0,0" Width="192"                     />
+                        <TextBlock x:ConnectionId='6' x:Name="email" HorizontalAlignment="Left" Height="33" Margin="200,-33,0,0" Text="" TextWrapping="Wrap" Width="192"/>
+                        <TextBox x:ConnectionId='7' x:Name="newEmail" HorizontalAlignment="Left" Height="33" Margin="200,-33,0,0" TextWrapping="Wrap" Width="192" Visibility="Collapsed"/>
+                        <Button x:ConnectionId='8' Content="Izmijeni Podatke" Height="33" Margin="200,0,0,0" Width="192"                       />
+                        <Button x:ConnectionId='9' Content="Obrisi Profil" Height="33" Margin="200,0,0,0" Width="192"                     />
                     </StackPanel>                
             </PivotItem>
+               <!-- <Pivot.RightHeader>
+                    <CommandBar Margin="0,0,10,0" HorizontalAlignment="Right">
+                        <AppBarButton x:Name="logout" Icon="Home" VerticalAlignment="Stretch" Click="logout_Clik"/>
+                    </CommandBar>
+                </Pivot.RightHeader>-->
         </Pivot>
            
         </StackPanel> 
 
 
         <VisualStateManager.VisualStateGroups>
-            <VisualStateGroup x:ConnectionId='8' x:Name="VisualStateGroup">
-                <VisualState x:ConnectionId='9' x:Name="Wide">
+            <VisualStateGroup x:ConnectionId='12' x:Name="VisualStateGroup">
+                <VisualState x:ConnectionId='13' x:Name="Wide">
                     <VisualState.StateTriggers>
                         <AdaptiveTrigger MinWindowWidth="800"/>
                     </VisualState.StateTriggers>
@@ -67,7 +74,7 @@
                     </VisualState.Setters>
                 </VisualState>
 
-                <VisualState x:ConnectionId='10' x:Name="Narrow">
+                <VisualState x:ConnectionId='14' x:Name="Narrow">
                     <VisualState.StateTriggers>
                         <AdaptiveTrigger MinWindowWidth="0"/>
                     </VisualState.StateTriggers>
@@ -80,7 +87,9 @@
                         <Setter Target="pInfo.Margin" Value="60,20,0,0"/>
                         <Setter Target="pInfo.Height" Value="90"/>
 
-
+                        <Setter Target="logout.header" Value="left"/>
+                        
+                        
 
 
                     </VisualState.Setters>

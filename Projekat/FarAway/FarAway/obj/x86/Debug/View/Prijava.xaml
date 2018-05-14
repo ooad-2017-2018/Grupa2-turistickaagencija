@@ -7,7 +7,7 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid x:Name="gPrijava">
+    <Grid x:ConnectionId='1' x:Name="gPrijava">
 
         <Grid.Background>
             <ImageBrush ImageSource="ms-appx:///Assets/ooad slike/hotness.jpg" AlignmentX="Center" AlignmentY="Center" Opacity="0.5" />
@@ -26,28 +26,28 @@
         </Grid.ColumnDefinitions>
 
 
-        <StackPanel x:Name="userpass" Grid.Row="1">
+        <StackPanel x:ConnectionId='2' x:Name="userpass" Grid.Row="1">
 
-            <TextBlock x:Name="user" HorizontalAlignment="Left" Height="37" TextAlignment="Right" Margin="160,10,0,0" TextWrapping="NoWrap" Text="Username" Width="255" FontFamily="Bradley Hand ITC" FontSize="35" FontWeight="Bold"/>
-            <TextBlock x:Name="pass" HorizontalAlignment="Left" TextAlignment="Right" Height="36" Margin="160,30,0,0" Text="Password" Width="255" FontFamily="Bradley Hand ITC" FontSize="35" FontWeight="Bold"/>
+            <TextBlock x:ConnectionId='10' x:Name="user" HorizontalAlignment="Left" Height="37" TextAlignment="Right" Margin="160,10,0,0" TextWrapping="NoWrap" Text="Username" Width="255" FontFamily="Bradley Hand ITC" FontSize="35" FontWeight="Bold"/>
+            <TextBlock x:ConnectionId='11' x:Name="pass" HorizontalAlignment="Left" TextAlignment="Right" Height="36" Margin="160,30,0,0" Text="Password" Width="255" FontFamily="Bradley Hand ITC" FontSize="35" FontWeight="Bold"/>
         </StackPanel>
 
-        <StackPanel x:Name="unos" Grid.Row="1" Grid.Column="1">
+        <StackPanel x:ConnectionId='3' x:Name="unos" Grid.Row="1" Grid.Column="1">
 
-            <TextBox x:Name="yas" HorizontalAlignment="Left" Height="37" Margin="10,30,0,0" Width="290" Background="White" />
-            <TextBox x:Name="password" HorizontalAlignment="Left" Height="37" Margin="10,30,0,0" TextWrapping="Wrap" Width="290" Background="White" />
-            <Button x:Name="btnPrijava" Content="Prijava" HorizontalAlignment="Left" Height="37" Margin="95,20,4,0" Width="204" Background="White" Click="Button_Click_1"/>
+            <TextBox x:ConnectionId='7' x:Name="yas" HorizontalAlignment="Left" Height="37" Margin="10,30,0,0" Width="290" Background="White" />
+            <TextBox x:ConnectionId='8' x:Name="password" HorizontalAlignment="Left" Height="37" Margin="10,30,0,0" TextWrapping="Wrap" Width="290" Background="White" />
+            <Button x:ConnectionId='9' x:Name="btnPrijava" Content="Prijava" HorizontalAlignment="Left" Height="37" Margin="95,20,4,0" Width="204" Background="White"                       />
 
         </StackPanel>
-        <Button x:Name="naziv" Grid.ColumnSpan="2" Grid.Column="1" HorizontalAlignment="Stretch" HorizontalContentAlignment="Stretch" Background="Transparent" Height="158" Margin="250,20,0,0" VerticalAlignment="Top" Width="649" Click="naziv_Click">
-            <TextBlock x:Name="tekst" Text="FAR AWAY" FontFamily="Forte" FontSize="100" Foreground="Black"   />
+        <Button x:ConnectionId='4' x:Name="naziv" Grid.ColumnSpan="2" Grid.Column="1" HorizontalAlignment="Stretch" HorizontalContentAlignment="Stretch" Background="Transparent" Height="158" Margin="250,20,0,0" VerticalAlignment="Top" Width="649"                    >
+            <TextBlock x:ConnectionId='6' x:Name="tekst" Text="FAR AWAY" FontFamily="Forte" FontSize="100" Foreground="Black"   />
         </Button>
-        <TextBlock x:Name="prijava" Grid.ColumnSpan="2" Grid.Column="1"  HorizontalAlignment="Left" Height="74" Margin="250,156,0,0" Text="Prijavite se" TextWrapping="Wrap" VerticalAlignment="Top" Width="508" FontFamily="Forte" FontSize="50" TextAlignment="Right"/>
+        <TextBlock x:ConnectionId='5' x:Name="prijava" Grid.ColumnSpan="2" Grid.Column="1"  HorizontalAlignment="Left" Height="74" Margin="250,156,0,0" Text="Prijavite se" TextWrapping="Wrap" VerticalAlignment="Top" Width="508" FontFamily="Forte" FontSize="50" TextAlignment="Right"/>
 
 
         <VisualStateManager.VisualStateGroups>
-            <VisualStateGroup x:Name="VisualStateGroup">
-                <VisualState x:Name="Wide">
+            <VisualStateGroup x:ConnectionId='12' x:Name="VisualStateGroup">
+                <VisualState x:ConnectionId='13' x:Name="Wide">
                     <VisualState.StateTriggers>
                         <AdaptiveTrigger MinWindowWidth="800"/>
                     </VisualState.StateTriggers>
@@ -63,7 +63,7 @@
                     </VisualState.Setters>
                 </VisualState>
 
-                <VisualState x:Name="Narrow">
+                <VisualState x:ConnectionId='14' x:Name="Narrow">
                     <VisualState.StateTriggers>
                         <AdaptiveTrigger MinWindowWidth="0"/>
                     </VisualState.StateTriggers>
@@ -104,3 +104,4 @@
 
     </Grid>
 </Page>
+
