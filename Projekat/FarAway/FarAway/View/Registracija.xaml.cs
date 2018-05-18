@@ -46,36 +46,46 @@ namespace FarAway
                 Korisnik kor = (await userTableObj.ToListAsync()).Find(x => x.Username == username.Text);
                 if (kor == null)
                 {
+                    if(ime.Text.Length==0 || prezime.Text.Length==0 || dRodjenja.Date.ToString().Length==0 || email.Text.Length==0 || password.Password.Length==0 || username.Text.Length==0)
+                    {
+                        throw new Exception("Nisu sva polja popunjema");
+                    }
                     if(password.Password!=password2.Password)
                     {
                         password.Password = "";
                         password2.Password = "";
-                        throw new Exception("Password nije isti! sorry fish");
-                        
+                        throw new Exception("Password nije isti!");                        
+                    }
+                    if(password.Password.Length <= 8)
+                    {
+                        password.Password = "";
+                        password2.Password = "";
+                        throw new Exception("Password mora imati najmanje 8 karaktera!");
                     }
                     Korisnik obj = new Korisnik();
-                    obj.Id = username.Text;
+                    //obj.Id = username.Text;
                     obj.Ime = ime.Text;
                     obj.Prezime = prezime.Text;
-                    obj.DatumRodjenja = Convert.ToString(dRodjenja.Date);
+                    obj.DatumRodjenja = dRodjenja.Date.ToString();
                     obj.Email = email.Text;
                     obj.Username = username.Text;
                     obj.Password = password.Password;
-                    userTableObj.InsertAsync(obj);
+                    await userTableObj.InsertAsync(obj);
                     MessageDialog msgDialog = new MessageDialog("Uspješno ste unijeli novog korisnika.");
-                    msgDialog.ShowAsync();
+                    await msgDialog.ShowAsync();
+                    this.Frame.Navigate(typeof(StranicaKorisnika), username.Text);
                 }
                 else
                 {
                     MessageDialog msgDialog = new MessageDialog("Korisnik vec postoji");
-                    msgDialog.ShowAsync();
-                    this.Frame.Navigate(typeof(Prijava));
+                    await msgDialog.ShowAsync();
+                    this.Frame.Navigate(typeof(StranicaKorisnika),username.Text);
                 }
             }
             catch (Exception ex)
             {
-                MessageDialog msgDialogError = new MessageDialog("Error : " + ex.ToString());
-                msgDialogError.ShowAsync();
+                MessageDialog msgDialogError = new MessageDialog(ex.ToString());
+                await msgDialogError.ShowAsync();
             }
         }
     }

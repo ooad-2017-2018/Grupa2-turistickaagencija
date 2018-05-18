@@ -38,27 +38,29 @@
                     </StackPanel>
                 </PivotItem>
             <PivotItem Header="Korisnicki racun">
-                    <StackPanel>                       
-                       <!-- <local:UsernamePretraga x:Name="username" HorizontalAlignment="Left" Height="30" Margin="10,0,0,0"  Width="430"/>-->
+                    <StackPanel>
+                        <!--<local:UsernamePretraga x:Name="Helpusername" HorizontalAlignment="Left" Height="30" Margin="10,0,0,0"  Width="430" Visibility="collapsed" />-->
                         <TextBlock HorizontalAlignment="Left" Height="33" Margin="10,0,0,0" Text="Username" TextWrapping="Wrap" Width="192"/>
-                        <TextBlock x:Name="username" HorizontalAlignment="Left" Height="33" Margin="200,-33,0,0" TextWrapping="Wrap" Width="192"/>
-                        <TextBox x:Name="newUsername" HorizontalAlignment="Left" Height="33" Margin="200,-33,0,0" TextWrapping="Wrap" Width="192" Visibility="Collapsed"/>
+                        <TextBlock x:Name="helpUsername" HorizontalAlignment="Left" Height="33" Margin="200,-33,0,0" TextWrapping="Wrap" Width="192" Visibility="Collapsed"/>
+                        <TextBox x:Name="username" HorizontalAlignment="Left" Height="33" Margin="200,-33,0,0" TextWrapping="Wrap" Width="192"/>
                         <TextBlock HorizontalAlignment="Left" Height="33" Margin="10,0,0,0" Text="Password" TextWrapping="Wrap" Width="192"/>
-                        <TextBlock x:Name="password" HorizontalAlignment="Left" Height="33" Margin="200,-33,0,0" Text="" TextWrapping="Wrap" Width="192"/>
-                        <TextBox x:Name="newPassword" HorizontalAlignment="Left" Height="33" Margin="200,-33,0,0" TextWrapping="Wrap" Width="192" Visibility="Collapsed"/>
+                       <!-- <TextBlock x:Name="password" HorizontalAlignment="Left" Height="33" Margin="200,-33,0,0" Text="" TextWrapping="Wrap" Width="192"/>-->
+                        <TextBox x:Name="password" HorizontalAlignment="Left" Height="33" Margin="200,-33,0,0" TextWrapping="Wrap" Width="192"/>
                         <TextBlock HorizontalAlignment="Left" Height="33" Margin="10,0,0,0" Text="E-mail" TextWrapping="Wrap" Width="192"/>
-                        <TextBlock x:Name="email" HorizontalAlignment="Left" Height="33" Margin="200,-33,0,0" Text="" TextWrapping="Wrap" Width="192"/>
-                        <TextBox x:Name="newEmail" HorizontalAlignment="Left" Height="33" Margin="200,-33,0,0" TextWrapping="Wrap" Width="192" Visibility="Collapsed"/>
+                        <!--<TextBlock x:Name="email" HorizontalAlignment="Left" Height="33" Margin="200,-33,0,0" Text="" TextWrapping="Wrap" Width="192"/>-->
+                        <TextBox x:Name="email" HorizontalAlignment="Left" Height="33" Margin="200,-33,0,0" TextWrapping="Wrap" Width="192"/>
                         <Button Content="Izmijeni Podatke" Height="33" Margin="200,0,0,0" Width="192" Click="Button_Click_1"/>
                         <Button Content="Obrisi Profil" Height="33" Margin="200,0,0,0" Width="192" Click="Button_Click"/>
+                        <Image x:Name="happyfam" Source="ms-appx:///Assets/ooad slike/happyfamily.jpg" Height="300" Margin="400,-150,0,0"/>
                     </StackPanel>                
             </PivotItem>
-               <!-- <Pivot.RightHeader>
-                    <CommandBar Margin="0,0,10,0" HorizontalAlignment="Right">
-                        <AppBarButton x:Name="logout" Icon="Home" VerticalAlignment="Stretch" Click="logout_Clik"/>
+                <Pivot.RightHeader>
+                    <CommandBar x:Name="logout" Margin="0,0,10,0" HorizontalAlignment="Stretch">
+                        <AppBarButton  Icon="Home" VerticalAlignment="Stretch" Click="logout_Clik" HorizontalAlignment="Stretch"/>
+                        <AppBarButton Icon="Find" HorizontalAlignment="Stretch"/>
                     </CommandBar>
-                </Pivot.RightHeader>-->
-        </Pivot>
+                </Pivot.RightHeader>
+            </Pivot>
            
         </StackPanel> 
 
@@ -87,9 +89,12 @@
                         <Setter Target="pInfo.Margin" Value="60,20,0,0"/>
                         <Setter Target="pInfo.Height" Value="90"/>
 
-                        <Setter Target="logout.header" Value="left"/>
-                        
-                        
+                        <Setter Target="logout.Margin" Value="0,0,750,0"/>
+                        <Setter Target="logout.Width" Value="120"/>
+
+                        <Setter Target="happyfam.Visibility" Value="Collapsed"/>
+
+
 
 
                     </VisualState.Setters>

@@ -40,17 +40,18 @@ namespace FarAway
 
         private async void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            if (yas.Text.Length == 0 || password.Text.Length == 0)
+            if (yas.Text.Length == 0 || password.Password.Length == 0)
             {
-                password.Text = "Molim unesite sva polja!";
+                MessageDialog msgbox = new MessageDialog("Molimo unesite sva polja!");
             }
-            else if (yas.Text.Length != 0 || (password.Text).Length != 0)
+            else if (yas.Text.Length != 0 || (password.Password).Length != 0)
             {
                 IMobileServiceTable<Korisnik> rKorisnik = App.MobileService.GetTable<Korisnik>();
 
                 try
                 {
                     Korisnik kor = (await rKorisnik.ToListAsync()).Find(x => x.Username == yas.Text); //koristimo da pretrazujemo korisnika
+
                     if (kor == null)
                     {
                         MessageDialog msgbox = new MessageDialog("Nemate racun, da li želite kreirati racun?");
@@ -75,6 +76,8 @@ namespace FarAway
                     }
                     else
                     {
+                        if (password.Password != kor.Password) throw new Exception("Pasword nije validan!");
+                        else if (yas.Text != kor.Username) throw new Exception("Username nije validan");
                         this.Frame.Navigate(typeof(StranicaKorisnika), yas.Text);
                     }
                 }

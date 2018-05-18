@@ -31,13 +31,13 @@
     <AppXManifest Include="C:\Users\hp\Documents\GitHub\Grupa2-turistickaagencija\Projekat\FarAway\FarAway\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-05-14T08:50:02.990</Modified>
+      <Modified>2018-05-18T15:26:37.517</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\hp\Documents\GitHub\Grupa2-turistickaagencija\Projekat\FarAway\FarAway\bin\x86\Debug\FarAway.exe">
       <PackagePath>entrypoint\FarAway.exe</PackagePath>
-      <Modified>2018-05-14T08:50:01.845</Modified>
+      <Modified>2018-05-18T15:26:35.794</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\hp\.nuget\packages\microsoft.azure.mobile.client\4.0.2\lib\uap10.0\Microsoft.Azure.Mobile.Client.dll">
       <PackagePath>Microsoft.Azure.Mobile.Client.dll</PackagePath>
@@ -527,6 +527,10 @@
       <PackagePath>Assets\ooad slike\fam.jpg</PackagePath>
       <Modified>2018-04-26T11:51:00.434</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\hp\Documents\GitHub\Grupa2-turistickaagencija\Projekat\FarAway\FarAway\Assets\ooad slike\happyfamily.jpg">
+      <PackagePath>Assets\ooad slike\happyfamily.jpg</PackagePath>
+      <Modified>2018-05-18T15:23:26.360</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\hp\Documents\GitHub\Grupa2-turistickaagencija\Projekat\FarAway\FarAway\Assets\ooad slike\hoteli.jpg">
       <PackagePath>Assets\ooad slike\hoteli.jpg</PackagePath>
       <Modified>2018-04-26T20:33:03.611</Modified>
@@ -635,7 +639,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\hp\Documents\GitHub\Grupa2-turistickaagencija\Projekat\FarAway\FarAway\bin\x86\Debug\FarAway.xr.xml">
       <PackagePath>FarAway.xr.xml</PackagePath>
-      <Modified>2018-05-14T08:36:20.120</Modified>
+      <Modified>2018-05-18T14:42:31.186</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.16299.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -644,11 +648,11 @@
     <AppxPackagedFile Include="C:\Users\hp\Documents\GitHub\Grupa2-turistickaagencija\Projekat\FarAway\FarAway\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-05-14T08:50:02.629</Modified>
+      <Modified>2018-05-18T15:26:36.762</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\hp\Documents\GitHub\Grupa2-turistickaagencija\Projekat\FarAway\FarAway\bin\x86\Debug\Core\FarAway.exe">
       <PackagePath>FarAway.exe</PackagePath>
-      <Modified>2018-05-14T08:50:02.982</Modified>
+      <Modified>2018-05-18T15:26:37.503</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

@@ -35,7 +35,7 @@
         <StackPanel x:Name="unos" Grid.Row="1" Grid.Column="1">
 
             <TextBox x:Name="yas" HorizontalAlignment="Left" Height="37" Margin="10,30,0,0" Width="290" Background="White" />
-            <TextBox x:Name="password" HorizontalAlignment="Left" Height="37" Margin="10,30,0,0" TextWrapping="Wrap" Width="290" Background="White" />
+            <PasswordBox x:Name="password" HorizontalAlignment="Left" Height="37" Margin="8,30,0,0" Background="White" Width="290" />
             <Button x:Name="btnPrijava" Content="Prijava" HorizontalAlignment="Left" Height="37" Margin="95,20,4,0" Width="204" Background="White" Click="Button_Click_1"/>
 
         </StackPanel>

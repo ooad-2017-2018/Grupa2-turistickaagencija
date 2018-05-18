@@ -394,6 +394,9 @@
     <AppxPackagedFile Include="C:\Users\hp\Documents\GitHub\Grupa2-turistickaagencija\Projekat\FarAway\FarAway\Assets\ooad slike\fam.jpg">
       <PackagePath>Assets\ooad slike\fam.jpg</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\hp\Documents\GitHub\Grupa2-turistickaagencija\Projekat\FarAway\FarAway\Assets\ooad slike\happyfamily.jpg">
+      <PackagePath>Assets\ooad slike\happyfamily.jpg</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\hp\Documents\GitHub\Grupa2-turistickaagencija\Projekat\FarAway\FarAway\Assets\ooad slike\hoteli.jpg">
       <PackagePath>Assets\ooad slike\hoteli.jpg</PackagePath>
     </AppxPackagedFile>

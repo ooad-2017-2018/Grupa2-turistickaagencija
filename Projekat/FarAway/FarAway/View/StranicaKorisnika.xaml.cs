@@ -25,22 +25,23 @@ namespace FarAway
     public sealed partial class StranicaKorisnika : Page
     {
 
-        Korisnik kor;
+        string user;
         public StranicaKorisnika()
         {
-
+            
             this.InitializeComponent();
+            
 
-
-        }
+    }
 
         protected async override void OnNavigatedTo(NavigationEventArgs e) //koristimo jer smo prenosili info sa jedne stranice na drugu
         {
             IMobileServiceTable<Korisnik> userTableObj = App.MobileService.GetTable<Korisnik>();
-            kor = (await userTableObj.ToListAsync()).Find(x => x.Username == e.Parameter.ToString()); //koristimo da pretrazujemo korisnika
+            Korisnik kor = (await userTableObj.ToListAsync()).Find(x => x.Username == e.Parameter.ToString()); //koristimo da pretrazujemo korisnika
             if (e.Parameter is string)
             {
                 username.Text = e.Parameter.ToString();
+                user = e.Parameter.ToString();
                 password.Text = kor.Password;
                 email.Text = kor.Email;
                 //ovdje treba pored username popuniti i ostale textblokove (password i email)
@@ -54,7 +55,7 @@ namespace FarAway
             IMobileServiceTable<Korisnik> userTableObj = App.MobileService.GetTable<Korisnik>();
             try
             {
-                kor = (await userTableObj.ToListAsync()).Find(x => x.Username == username.Text); //koristimo da pretrazujemo korisnika
+                Korisnik kor = (await userTableObj.ToListAsync()).Find(x => x.Username == username.Text); //koristimo da pretrazujemo korisnika
                 await userTableObj.DeleteAsync(kor);
                 MessageDialog msgDialog = new MessageDialog("Uspješno ste izbrisali vas racun.");
                 await msgDialog.ShowAsync();
@@ -69,38 +70,52 @@ namespace FarAway
 
         private async void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            //Ovdje treba dodati funkcionalnost da updatetuje podatke tj. moze promijeniti username, pass i email
-            //treba i ovdje provjeriti da nemaju 2 ista username
+           
             IMobileServiceTable<Korisnik> userTableObj = App.MobileService.GetTable<Korisnik>();
-            kor = (await userTableObj.ToListAsync()).Find(x => x.Username == username.Text);
-            username.Visibility = Visibility.Collapsed;
-            newUsername.Visibility = Visibility.Visible;
-            password.Visibility = Visibility.Collapsed;
-            newPassword.Visibility = Visibility.Visible;
-            email.Visibility = Visibility.Collapsed;
-            newEmail.Visibility = Visibility.Visible;
-            if (newUsername.Text.Length != 0)
+            Korisnik kor = (await userTableObj.ToListAsync()).Find(x => x.Username == user);
+            try
             {
-                kor.Username = newUsername.Text;
-                username.Text = newUsername.Text;
+                if (username.Text != user)
+                {
+                   
+                    Korisnik kor2 = (await userTableObj.ToListAsync()).Find(x => x.Username == username.Text);
+                    if (kor2 != null)
+                    {
+                        username.Text = kor.Username;
+                        throw new Exception("Username je zauzet");
+                    }
+                    else
+                    {
+                        kor.Username = username.Text;
+                        user = username.Text;
+                    }
+                }
+                if (password.Text != kor.Password)
+                {
+                    if (password.Text.Length <= 8)
+                    {
+                       
+                        password.Text = kor.Password;
+                        throw new Exception("Password mora imati najmanje 8 karaktera");
+                    }
+                    kor.Password = password.Text;
 
+                }
+                if (email.Text != kor.Email)
+                {
+                    kor.Email = email.Text;
+
+                }
+                await userTableObj.UpdateAsync(kor);
+                MessageDialog msgDialogError = new MessageDialog("Uspjesno ste ažurirali vaše podatke ;)");
+                await msgDialogError.ShowAsync();
             }
-            else newUsername.Text = username.Text;
-            if (newPassword.Text.Length != 0)
+            catch(Exception ex)
             {
-                kor.Password = newPassword.Text;
-                password.Text = newPassword.Text;
+                MessageDialog Error = new MessageDialog(ex.ToString());
+                await Error.ShowAsync();
             }
-            else newPassword.Text = password.Text;
-            if (newEmail.Text.Length != 0)
-            {
-                kor.Email = newEmail.Text;
-                email.Text = newEmail.Text;
-            }
-            else newEmail.Text = email.Text;
-            userTableObj.UpdateAsync(kor);
-            MessageDialog msgDialogError = new MessageDialog("Uspjesno ste ažurirali vaše podatke ;)");
-            await msgDialogError.ShowAsync();
+           
         }
 
         private void logout_Clik(object sender, RoutedEventArgs e)
