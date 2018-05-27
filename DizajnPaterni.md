@@ -39,5 +39,18 @@ promijeni stanje, drugi zainteresovani objekti se obavještavaju.
 
 ### Primjena u FarAway aplikaciji ### 
 Ako prilikom rezervacije, sva mjesta budu zauzeta i ako u nekom trenutku prije isteka
-krajnjeg roka za rezervaciju mjesto se oslobodi zainteresovani korisnik prima objavjet preko 
+krajnjeg roka za rezervaciju mjesto se oslobodi zainteresovani korisnik prima obavjest preko 
 e-maila da je mjesto sada slobodno.
+
+## Adapter Patern ##
+Osnovna funkcija Adapter paterna je omogućavanje šire upotrebe već postojećih klasa. Ukoliko ne želimo mijenjati već postojeću klasu, ali nam je iz nekog razloga potreban drugačiji interface, koristi se ovaj patern.Adapter klasa služi kao posrednik između orginalne klase i interfejsa. Na ovaj način ne narušavamo integritet aplikacije.
+## Struktura Adapter Paterna ##
+* Client klasa-klasa koja preko ITarget interface-a surađuje sa drugim klasama
+* ITarget-definira domen specifični interfejs koji klijent zahtjeva
+* Adapter-implementira taj novi interface tj. prilagođava već postojeći interface
+* Adaptee-definira postojeći interface koji će se prilagoditi
+
+### Primjena u FarAway aplikaciji ###
+Nema primjene u FarAway aplikaciji
+## Proxy Patern ##
+## Decorator Patern ##
