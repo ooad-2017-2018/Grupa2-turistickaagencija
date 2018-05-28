@@ -42,7 +42,7 @@ Ako prilikom rezervacije, sva mjesta budu zauzeta i ako u nekom trenutku prije i
 krajnjeg roka za rezervaciju mjesto se oslobodi zainteresovani korisnik prima obavjest preko 
 e-maila da je mjesto sada slobodno.
 
-### Adapter Patern ###
+# Adapter Patern #
 Osnovna funkcija Adapter paterna je omogućavanje šire upotrebe već postojećih klasa. Ukoliko ne želimo mijenjati već postojeću klasu, ali nam je iz nekog razloga potreban drugačiji interface, koristi se ovaj patern. Adapter klasa služi kao posrednik između orginalne klase i interface-a. Na ovaj način ne narušavamo integritet aplikacije.
 
 ## Struktura Adapter Paterna ##
@@ -54,7 +54,7 @@ Osnovna funkcija Adapter paterna je omogućavanje šire upotrebe već postojeći
 ### Primjena u FarAway aplikaciji ###
 Nije korišteno u FarAway aplikaciji
 
-### Strategy Patern ###
+# Strategy Patern #
 Strategy patern izdvaja algoritam iz matične klase i uključuje ga u posebne klase. Pogodan je kada postoje različiti primjenjivi algoritmi (strategije) za neki problem.
 
 ## Struktura Strategy Paterna ##
@@ -65,7 +65,7 @@ Strategy patern izdvaja algoritam iz matične klase i uključuje ga u posebne kl
 ## Primjena u FarAway aplikaciji ##
 Moze se izdvojiti odvojen algoritam u zavisnosti od toga da li je korisnik ostvari popust ili ne i uključiti u klasu. Postoje dvije strategije, jedna ukoliko jeste ostvario popust i jedna ukoliko nije ostvario popust.
 
-#### State Patern ####
+# State Patern #
 State Pattern je dinamička verzija Strategy paterna. Objekat mijenja način ponašanja na osnovu trenutnog stanja. Postiže se promjenom podklase unutar hijerarhije klasa.
 
 ## Struktura State Paterna ##
