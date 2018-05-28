@@ -98,6 +98,6 @@ namespace FarAway
             deferral.Complete();
         }
 
-        public static MobileServiceClient MobileService = new MobileServiceClient("https://FarAwayOOAD.azurewebsites.net");
+        public static MobileServiceClient MobileService = new MobileServiceClient("http://FarAwayOOAD.azurewebsites.net");
     }
 }

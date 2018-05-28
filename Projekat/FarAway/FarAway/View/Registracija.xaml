@@ -29,23 +29,25 @@
 
         <StackPanel x:Name="unos1" Grid.Row="1" Grid.Column="1">
             <TextBlock HorizontalAlignment="Left" Height="46" Margin="50,0,0,0" Text="Ime" TextWrapping="Wrap" Width="75" FontFamily="Bradley Hand ITC" FontSize="25" FontWeight="Bold" />
-            <TextBox x:Name="ime" HorizontalAlignment="Left" Height="18" Margin="100,-60,0,0"  Width="131" Background="White"/>
+            <TextBox x:Name="ime" HorizontalAlignment="Left" Height="18" Margin="100,-60,0,0"  Width="131" Background="White" Text="{Binding Path = Korisnik.Ime,UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}"/>
             <TextBlock HorizontalAlignment="Left" Height="46" Margin="10,0,0,0" Text="Prezime" TextWrapping="Wrap" Width="85" FontFamily="Bradley Hand ITC" FontSize="24" TextAlignment="Left" FontWeight="Bold"/>
-            <TextBox x:Name="prezime" HorizontalAlignment="Left" Height="18" Margin="100,-70,0,0"  Width="131" Background="White"/>
+            <TextBox x:Name="prezime" HorizontalAlignment="Left" Height="18" Margin="100,-70,0,0"  Width="131" Background="White" Text="{Binding Path = Korisnik.Prezime,UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}" />
             <TextBlock HorizontalAlignment="Left" Height="25" Margin="10,0,0,0" Text="E-mail" TextWrapping="Wrap" Width="85" FontFamily="Bradley Hand ITC" FontSize="25" FontWeight="Bold"/>
-            <TextBox x:Name="email" HorizontalAlignment="Left" Height="18" Margin="100,-40,0,0" Width="131" Background="White"/>
+            <TextBox x:Name="email" HorizontalAlignment="Left" Height="18" Margin="100,-40,0,0" Width="131" Background="White" Text="{Binding Path = Korisnik.Email,UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}"/>
             <TextBlock HorizontalAlignment="Left" Height="25" Margin="10,0,0,0" Text="Datum rodjenja" TextWrapping="Wrap" Width="85" FontFamily="Bradley Hand ITC" FontSize="25" FontWeight="Bold"/>
-            <CalendarDatePicker x:Name="dRodjenja" HorizontalAlignment="Left" Height="35" Margin="100,-25,0,0" Width="131" Background="White"/>
+           <!-- <CalendarDatePicker x:Name="dRodjenja" HorizontalAlignment="Left" Height="35" Margin="100,-25,0,0" Width="131" Background="White" Date= "{Binding Path = Korisnik.DatumRodjenja,Converter={StaticResource StringToDateTimeOffsetConverter} ,UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}"/>-->
+            <TextBox x:Name="dRodjenja" HorizontalAlignment="Left" Height="35" Margin="100,-25,0,0" Width="131" Background="White" Text="{Binding Path = Korisnik.DatumRodjenja,UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}"/>
             <TextBlock HorizontalAlignment="Left" Height="30" Margin="10,15,0,0" Text="Username" TextWrapping="Wrap" Width="110" FontFamily="Bradley Hand ITC" FontSize="25" FontWeight="Bold"/>
-            <TextBox x:Name="username" HorizontalAlignment="Left" Height="25" Margin="125,-35,0,0" Width="110" Background="White"/>
+            <TextBox x:Name="username" HorizontalAlignment="Left" Height="25" Margin="125,-35,0,0" Width="110" Background="White" Text="{Binding Path = Korisnik.Username,UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}"/>
             <TextBlock HorizontalAlignment="Left" Height="28" Margin="10,5,0,0"  Text="Password" TextWrapping="Wrap" Width="110" FontFamily="Bradley Hand ITC" FontSize="25" FontWeight="Bold"/>
-            <PasswordBox x:Name="password" HorizontalAlignment="Left" Height="25" Margin="125,-30,0,0" Width="110" Background="White"/>
+            <PasswordBox x:Name="password" HorizontalAlignment="Left" Height="25" Margin="125,-30,0,0" Width="110" Background="White" Password="{Binding Path = Korisnik.Password,UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}"/>
         </StackPanel>
 
         <StackPanel x:Name="unos2" Grid.Row="2" Grid.Column="1">
             <TextBlock HorizontalAlignment="Left" Height="60" Margin="10,0,0,0" Text="Potvrdi password" TextWrapping="Wrap" Width="100" FontFamily="Bradley Hand ITC" FontSize="25" FontWeight="Bold"/>
-            <PasswordBox x:Name="password2" HorizontalAlignment="Left" Height="34" Margin="125,-50,0,0" Width="110" Background="White"/>
-            <Button x:Name="btnRegistracija" Content="Registruj se" HorizontalAlignment="Left" Height="42" Margin="75,0,0,0" Width="160" Background="White" Click="btnRegistracija_Click" />
+            <PasswordBox x:Name="password2" HorizontalAlignment="Left" Height="34" Margin="125,-50,0,0" Width="110" Background="White" Password="{Binding Path = PSifra,UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}"/>
+            <Button x:Name="btnRegistracija" Content="Registruj se" HorizontalAlignment="Left" Height="42" Margin="75,0,0,0" Width="160" Background="White" Command="{Binding Path=UnesiUBazu}" />
+            <!--<Button x:Name="dalje" Content="Dalje" HorizontalAlignment="Left" Height="42" Margin="75,0,0,0" Width="160" Background="White" Click="dalje_Click"/>-->
         </StackPanel>
 
         <Button x:Name="naziv" Grid.ColumnSpan="2" Grid.Column="1" HorizontalAlignment="Stretch" HorizontalContentAlignment="Stretch" Background="Transparent" Height="158" Margin="250,20,0,0" VerticalAlignment="Top" Width="649" Click="naziv_Click">

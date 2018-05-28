@@ -34,9 +34,9 @@
 
         <StackPanel x:Name="unos" Grid.Row="1" Grid.Column="1">
 
-            <TextBox x:Name="yas" HorizontalAlignment="Left" Height="37" Margin="10,30,0,0" Width="290" Background="White" />
-            <PasswordBox x:Name="password" HorizontalAlignment="Left" Height="37" Margin="8,30,0,0" Background="White" Width="290" />
-            <Button x:Name="btnPrijava" Content="Prijava" HorizontalAlignment="Left" Height="37" Margin="95,20,4,0" Width="204" Background="White" Click="Button_Click_1"/>
+            <TextBox x:Name="yas" HorizontalAlignment="Left" Height="37" Margin="10,30,0,0" Width="290" Background="White" Text="{Binding Path = Korisnik.Username,UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}" />
+            <PasswordBox x:Name="password" HorizontalAlignment="Left" Height="37" Margin="8,30,0,0" Background="White" Width="290" Password="{Binding Path = Korisnik.Password,UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}" />
+            <Button x:Name="btnPrijava" Content="Prijava" HorizontalAlignment="Left" Height="37" Margin="95,20,4,0" Width="204" Background="White" Command="{Binding Path=Prijava}"/>
 
         </StackPanel>
         <Button x:Name="naziv" Grid.ColumnSpan="2" Grid.Column="1" HorizontalAlignment="Stretch" HorizontalContentAlignment="Stretch" Background="Transparent" Height="158" Margin="250,20,0,0" VerticalAlignment="Top" Width="649" Click="naziv_Click">

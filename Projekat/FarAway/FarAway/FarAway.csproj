@@ -95,9 +95,14 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="INavigacija.cs" />
     <Compile Include="Korisnik.cs" />
+    <Compile Include="KorisnikViewModel.cs" />
     <Compile Include="KorisnikLoginViewModel.cs" />
-    <Compile Include="KorisnikRegistracijaViewModel.cs" />
+    <Compile Include="Navigacija.cs" />
+    <Compile Include="RelayCommand.cs" />
+    <Compile Include="StranicaKorisnikaViewModel.cs" />
+    <Compile Include="StringToDateTimeOffsetConverter.cs" />
     <Compile Include="View\MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
@@ -135,7 +140,6 @@
     <Compile Include="View\StranicaKorisnika.xaml.cs">
       <DependentUpon>StranicaKorisnika.xaml</DependentUpon>
     </Compile>
-    <Compile Include="tabela.cs" />
   </ItemGroup>
   <ItemGroup>
     <AppxManifest Include="Package.appxmanifest">

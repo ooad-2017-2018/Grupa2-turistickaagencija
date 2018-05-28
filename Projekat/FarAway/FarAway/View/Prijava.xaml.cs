@@ -26,6 +26,7 @@ namespace FarAway
         public Prijava()
         {
             this.InitializeComponent();
+            DataContext = new  KorisnikLoginViewModel();
         }
 
         private void naziv_Click(object sender, RoutedEventArgs e)
@@ -38,7 +39,7 @@ namespace FarAway
 
         }
 
-        private async void Button_Click_1(object sender, RoutedEventArgs e)
+        /*private async void Button_Click_1(object sender, RoutedEventArgs e)
         {
             if (yas.Text.Length == 0 || password.Password.Length == 0)
             {
@@ -89,6 +90,6 @@ namespace FarAway
 
                 }
             }
-        }
+        }*/
     }
 }
