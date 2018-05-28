@@ -76,3 +76,46 @@ State Pattern je dinamička verzija Strategy paterna. Objekat mijenja način pon
 ## Primjena u FarAway aplikaciji ##
 
 Tipična primjena State Paterna je prilikom plaćanja elektronskim putem gdje može doći do više stanja (odbijena kartica, neispravan pin, nedovoljno novca na stanju, uspješno plaćanje...)
+
+# Decorator Patern #
+
+Spada u strukturalne paterne. Osnovna namjena Decorator paterna je da omogući dinamičko dodavanje novih elemenata i ponašanja
+postojećim objektima.
+
+## Struktura Decorator Paterna ##
+
+* Component – Originalna klasa koja sadrži interfejs koji se može mijenjati ili mu se mogu dinamički dodati operacije
+* IComponent – interfejs koji identificira klase objekata koji trebaju biti dekorisani
+* Decorator – klasa koja odgovara IComponent interfejsu i implementira dinamički prošireni interfejs
+
+### Primjena u FarAway aplikaciji ###
+
+
+# Composite Patern #
+
+Spada u strukturalne paterne. Osnovna namjena Composite paterna je da omogući formiranje strukture stabla
+pomoću klasa, u kojoj se individualni objekti (listovi stabla) i kompozicije individualnih objekata
+(korijeni stabla) jednako tretiraju.
+
+## Struktura Composite Paterna ##
+* Client – manipulira objektima u kompoziciji preko IComponent interfejsa
+* IComponent – definira interfejs-operacije za objekte u kompoziciji i implementira defaultno ponašanje koje je zajedničko za objekte oba tipa 
+* Component – implementira interfejs klase za osnovne objekte 
+* Composite – implementira interfejs koji je primjenjiv na kompozitne objekte, korištenjem implementacije za pojedinačne komponente.
+
+### Primjena u FarAway aplikaciji ###
+
+
+# Prototype patern #
+
+Spada u kreacijske paterne. Uloga Prototype paterna je da kreira nove objekte klonirajući jednu od postojećih prototip
+instanci. Ako je trošak kreiranja novog objekta velik i kreiranje objekta je
+resursno zahtjevno tada se vrši kloniranje već postojećeg objekata.
+
+## Struktura Prototype Paterna ##
+* Client klasa -zahtjeva kloniraje postojećeg objekta preko interfejsa IPrototype
+* IPrototype - interfejs kojim se omogućava kloniranje postojećih konkretnih objekata 
+* Prototype1, Prototype2,…(konkretni prototipi) - klase koje implementiraju kloniranje postojećih objekata
+
+### Primjena u FarAway aplikaciji ###
+
