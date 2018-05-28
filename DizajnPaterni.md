@@ -102,7 +102,7 @@ pomoću klasa, u kojoj se individualni objekti (listovi stabla) i kompozicije in
 * Client – manipulira objektima u kompoziciji preko IComponent interfejsa
 * IComponent – definira interfejs-operacije za objekte u kompoziciji i implementira defaultno ponašanje koje je zajedničko za objekte oba tipa 
 * Component – implementira interfejs klase za osnovne objekte 
-* Composite – implementira interfejs koji je primjenjiv na kompozitne objekte, korištenjem implementacije za pojedinačne komponente.
+* Composite – implementira interfejs koji je primjenjiv na kompozitne objekte, korištenjem implementacije za pojedinačne komponente
 
 ### Primjena u FarAway aplikaciji ###
 
