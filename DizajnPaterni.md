@@ -106,6 +106,8 @@ pomoću klasa, u kojoj se individualni objekti (listovi stabla) i kompozicije in
 
 ### Primjena u FarAway aplikaciji ###
 
+Zasad nema primjene u nasoj aplikaciji, ali mozemo ga recimo primijeniti razbijajuci putovanje na dvije komponente:putovanje i
+stvarni boravak u hotelu, pa dalje razbijajuci te komponente na neke jos jednostavnije...
 
 # Prototype patern #
 
@@ -119,4 +121,6 @@ resursno zahtjevno tada se vrši kloniranje već postojećeg objekata.
 * Prototype1, Prototype2,…(konkretni prototipi) - klase koje implementiraju kloniranje postojećih objekata
 
 ### Primjena u FarAway aplikaciji ###
+
+Nema primjene u nasoj aplikaciji.
 
