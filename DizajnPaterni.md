@@ -90,6 +90,7 @@ postojećim objektima.
 
 ### Primjena u FarAway aplikaciji ###
 
+Zasad nema primjene ovog paterna, ali recimo mogli bi ga primijeniti u obrazovanju cijena putovanja. Ukoliko se recimo cijena avionske karte promijeni da to dinamicki utice na cijenu svih putovanja, a ne da se rucno moraju podesavati te cijene.
 
 # Composite Patern #
 
